@@ -1,0 +1,11358 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "84a6a44d-a57b-477e-961a-5d5b7d714208")
+	(paper "A4")
+	(title_block
+		(title "Rod Selection Panel")
+	)
+	(lib_symbols
+		(symbol "Device:LED_45deg"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LED_45deg"
+				(at 1.27 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode, rotated by 45°"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_45deg_0_1"
+				(polyline
+					(pts
+						(xy -1.4732 -1.4224) (xy -1.6256 -1.0668)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 0 1.27) (xy 0.635 -0.635) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.1176 -0.508) (xy -1.4732 -1.4224) (xy -1.1176 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.7112 -1.7272) (xy -0.8636 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0.635) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -0.8128) (xy -0.7112 -1.7272) (xy -0.3556 -1.5748)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 0.635 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_45deg_1_1"
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Interface_Expansion:PCF8574T"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.112 14.732 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "PCF8574T"
+				(at 3.302 14.732 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0100xxx, SOIC-16"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "NXP Port-Expander"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*SOIC*7.5x10.3mm?P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PCF8574T_0_1"
+				(rectangle
+					(start -7.62 12.7)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "PCF8574T_1_1"
+				(pin input line
+					(at -10.16 10.16 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "~{INT}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(name "P0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "P1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "P2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "P3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "P4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "P5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "P6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name "P7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RF_Module:ESP32-WROOM-32"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -12.7 34.29 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ESP32-WROOM-32"
+				(at 1.27 34.29 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "RF_Module:ESP32-WROOM-32"
+				(at 0 -38.1 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf"
+				(at -7.62 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RF Radio BT ESP ESP32 Espressif onboard PCB antenna"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "ESP32?WROOM?32*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ESP32-WROOM-32_0_1"
+				(rectangle
+					(start -12.7 33.02)
+					(end 12.7 -33.02)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ESP32-WROOM-32_1_1"
+				(pin input line
+					(at -15.24 30.48 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 25.4 0)
+					(length 2.54)
+					(name "SENSOR_VP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 22.86 0)
+					(length 2.54)
+					(name "SENSOR_VN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 0 0)
+					(length 2.54)
+					(name "SDO/SD0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -2.54 0)
+					(length 2.54)
+					(name "SDI/SD1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -5.08 0)
+					(length 2.54)
+					(name "SHD/SD2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -7.62 0)
+					(length 2.54)
+					(name "SWP/SD3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -10.16 0)
+					(length 2.54)
+					(name "SCK/CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -12.7 0)
+					(length 2.54)
+					(name "SCS/CMD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -12.7 -27.94 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 35.56 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -35.56 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -35.56 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -35.56 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -35.56 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 30.48 180)
+					(length 2.54)
+					(name "IO0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 27.94 180)
+					(length 2.54)
+					(name "TXD0/IO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 25.4 180)
+					(length 2.54)
+					(name "IO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 22.86 180)
+					(length 2.54)
+					(name "RXD0/IO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 20.32 180)
+					(length 2.54)
+					(name "IO4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 17.78 180)
+					(length 2.54)
+					(name "IO5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 15.24 180)
+					(length 2.54)
+					(name "IO12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 12.7 180)
+					(length 2.54)
+					(name "IO13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 10.16 180)
+					(length 2.54)
+					(name "IO14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 7.62 180)
+					(length 2.54)
+					(name "IO15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 5.08 180)
+					(length 2.54)
+					(name "IO16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "IO17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "IO18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -2.54 180)
+					(length 2.54)
+					(name "IO19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "IO21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -7.62 180)
+					(length 2.54)
+					(name "IO22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -10.16 180)
+					(length 2.54)
+					(name "IO23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 2.54)
+					(name "IO25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -15.24 180)
+					(length 2.54)
+					(name "IO26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -17.78 180)
+					(length 2.54)
+					(name "IO27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -20.32 180)
+					(length 2.54)
+					(name "IO32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -22.86 180)
+					(length 2.54)
+					(name "IO33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 -25.4 180)
+					(length 2.54)
+					(name "IO34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 -27.94 180)
+					(length 2.54)
+					(name "IO35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_Push_45deg"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 3.048 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push_45deg"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_45deg_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.54) (xy 2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.032 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 138.43 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01a3eb13-ffaf-4451-8531-63f7333214c4")
+	)
+	(junction
+		(at 218.44 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04973c50-3863-4fe9-b4c1-12163243dc3d")
+	)
+	(junction
+		(at 125.73 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08441833-ca22-40bb-8e18-268824bde48b")
+	)
+	(junction
+		(at 223.52 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08eca1a8-5e5b-409f-adbd-8613bcd03131")
+	)
+	(junction
+		(at 218.44 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d6a8638-00b6-4919-b91e-4f77b43f33b5")
+	)
+	(junction
+		(at 82.55 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d85ad55-323b-454f-bc4a-9d9d43c1aa7c")
+	)
+	(junction
+		(at 218.44 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dad9f2a-71cd-4569-ad65-c8d9650c2ff2")
+	)
+	(junction
+		(at 113.03 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dce299e-c997-40f4-ac41-259d9aed3f1b")
+	)
+	(junction
+		(at 100.33 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10806ad0-3fdc-45c2-918f-4e80e2aa75eb")
+	)
+	(junction
+		(at 107.95 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11cfe0cc-d910-4e38-ada4-2f5f19b47e64")
+	)
+	(junction
+		(at 210.82 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12dd1e98-27b8-48c6-afca-54c9b1c49e9b")
+	)
+	(junction
+		(at 256.54 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13fbd258-1a42-44cd-a4e2-ce42d7da501b")
+	)
+	(junction
+		(at 231.14 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1643a995-64d5-4839-a93b-0ffc8c2ba93f")
+	)
+	(junction
+		(at 248.92 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1887d3c5-063b-4328-8497-f242e54ab453")
+	)
+	(junction
+		(at 120.65 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19a3f289-5edb-472b-b810-4dc886b9624e")
+	)
+	(junction
+		(at 205.74 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b6f8273-a47d-4e35-ba33-85019c22ee05")
+	)
+	(junction
+		(at 210.82 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1cc2ba8f-c57f-42b2-a6f2-d77a7d3d7923")
+	)
+	(junction
+		(at 107.95 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e37bd86-cf76-43bc-a73f-ed14f592ccc4")
+	)
+	(junction
+		(at 82.55 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e3d0ab8-4a8f-4c09-a16c-cf890095f7b9")
+	)
+	(junction
+		(at 205.74 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "200a6a1f-f580-4f40-ab6e-6d21a089a49c")
+	)
+	(junction
+		(at 210.82 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "209c8a98-0942-4826-ace6-dca2476c6081")
+	)
+	(junction
+		(at 236.22 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "209ca031-69b3-4894-9f50-f927c73f5879")
+	)
+	(junction
+		(at 125.73 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21251a3b-37b8-47f5-905a-1bb477872b1a")
+	)
+	(junction
+		(at 107.95 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "217f10ef-2765-4c6a-ab9c-209eb5a2cbfc")
+	)
+	(junction
+		(at 69.85 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27f5ab12-2a64-4975-b686-c064cb071fc5")
+	)
+	(junction
+		(at 82.55 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2dd4cb92-bfff-49f9-a6bb-c43e2468b1cc")
+	)
+	(junction
+		(at 82.55 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3006ed4a-19b2-4680-9edc-d959927a2b84")
+	)
+	(junction
+		(at 95.25 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33dbe56f-10d9-4fa9-8fb7-a54093bc3322")
+	)
+	(junction
+		(at 231.14 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "35d040f7-41bb-46cd-a0fa-eb56747f3b33")
+	)
+	(junction
+		(at 198.12 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "374a73a0-3ff9-4845-b78e-7ec5772c606d")
+	)
+	(junction
+		(at 69.85 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3877df10-d85f-4ecc-a476-66112c87fae1")
+	)
+	(junction
+		(at 95.25 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "395cbcb7-3e4f-4e95-8a2f-7d8cf4fb7661")
+	)
+	(junction
+		(at 120.65 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39f20d51-fc0f-469e-bf64-d894c099590b")
+	)
+	(junction
+		(at 125.73 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3bc8625c-cbaf-47b1-aa53-431b936ab4e7")
+	)
+	(junction
+		(at 120.65 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "45aa25e1-1d2e-483c-8ab5-38825ec24121")
+	)
+	(junction
+		(at 133.35 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "469d3ba1-a2b0-41de-aea5-f3e083645bd2")
+	)
+	(junction
+		(at 107.95 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "47ff1d30-64ac-4a7d-8ad3-bd3cc1f65345")
+	)
+	(junction
+		(at 87.63 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48b19d43-6a35-4a21-bc94-7c249785d458")
+	)
+	(junction
+		(at 193.04 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a49a5b8-3049-428e-8359-588153a667f6")
+	)
+	(junction
+		(at 125.73 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4beeec5c-f09b-495c-9498-ca13fc063d44")
+	)
+	(junction
+		(at 243.84 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4cde8dae-2107-4f04-a7f4-b8ba0dc5cd32")
+	)
+	(junction
+		(at 243.84 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e1bc8a4-d83b-4105-9605-e5adc33fb705")
+	)
+	(junction
+		(at 236.22 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50a36a2f-4ce0-4bdb-9515-7223261608ed")
+	)
+	(junction
+		(at 248.92 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51d6e7b7-83ce-479a-85ae-ed8cbcb2ae4c")
+	)
+	(junction
+		(at 236.22 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "547c8383-0e9f-4755-8be1-b81f582a27e9")
+	)
+	(junction
+		(at 100.33 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6264cfe8-fe80-4ae3-87c3-e90b9b1050f1")
+	)
+	(junction
+		(at 223.52 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63faf1b6-1082-42cc-be9f-b2d68c00194f")
+	)
+	(junction
+		(at 231.14 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "662c1847-1060-4653-a56e-a557ccb8a9cd")
+	)
+	(junction
+		(at 138.43 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67b7cd58-d87b-4168-a349-1d0e95512bdc")
+	)
+	(junction
+		(at 231.14 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69b33985-81cd-4293-8f5c-6f9eba40dc6e")
+	)
+	(junction
+		(at 69.85 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69cb52e9-b97a-4181-8490-0bd73e6e9999")
+	)
+	(junction
+		(at 218.44 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a6fbf3d-e13c-44d1-9506-081a10d2442c")
+	)
+	(junction
+		(at 100.33 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ae60481-0699-432f-b335-07d58a016f57")
+	)
+	(junction
+		(at 218.44 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d29029a-8527-4351-8848-dcc9bba0fc6d")
+	)
+	(junction
+		(at 74.93 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76353a52-8bcf-4b3b-967d-eb3b5af9d167")
+	)
+	(junction
+		(at 248.92 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76c9912c-9557-4d53-89a4-c64f3734d377")
+	)
+	(junction
+		(at 100.33 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d923e1d-bccf-4778-b384-d66f32df0efe")
+	)
+	(junction
+		(at 198.12 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f1ff794-ccce-4ffe-baac-cc5de2483534")
+	)
+	(junction
+		(at 87.63 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f69f3f3-d5e4-4c7f-99ea-b13b400535bd")
+	)
+	(junction
+		(at 261.62 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80413838-40c8-407a-a4e1-2d1517307fba")
+	)
+	(junction
+		(at 248.92 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "818513aa-a53b-42da-b526-9bae9d7038ee")
+	)
+	(junction
+		(at 231.14 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8325eeeb-a60c-44a7-8ae0-613b5f58a06c")
+	)
+	(junction
+		(at 107.95 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8601ee9f-226f-4356-81e5-9398bc877c39")
+	)
+	(junction
+		(at 218.44 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "885d3107-09bb-4903-bc4e-4b5b5e63505c")
+	)
+	(junction
+		(at 256.54 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89dedbfb-f98d-4723-978b-dd08443d3b5b")
+	)
+	(junction
+		(at 231.14 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a844bec-172f-480f-b35c-574f4ba3e1bf")
+	)
+	(junction
+		(at 107.95 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bd47160-b8a1-4d15-ad97-5d8a49b934f4")
+	)
+	(junction
+		(at 248.92 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c1a8d44-aea4-4177-a1f9-f53417425747")
+	)
+	(junction
+		(at 113.03 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8fbf0cc0-0764-4eee-9b19-647752298953")
+	)
+	(junction
+		(at 261.62 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "92885256-6d7a-4d8d-a7b6-33c1f9679c9c")
+	)
+	(junction
+		(at 261.62 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9403ad68-5812-4fc5-9ecb-3f7753137824")
+	)
+	(junction
+		(at 205.74 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96ec0dad-e6eb-4308-b92c-0ba0438639a2")
+	)
+	(junction
+		(at 138.43 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97aa104b-b1c6-4461-888b-857ddd642ebd")
+	)
+	(junction
+		(at 236.22 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a7b0350-8049-4732-ad22-190deb3680fd")
+	)
+	(junction
+		(at 274.32 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bd36322-0624-480b-810e-4cdcf21d2f73")
+	)
+	(junction
+		(at 69.85 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e32a182-c21f-4013-a0fb-a42158f6741a")
+	)
+	(junction
+		(at 82.55 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0aa7cd6-0a07-454f-9d5b-0ae31f07fdcb")
+	)
+	(junction
+		(at 193.04 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0dca116-1a4e-455b-b77b-74ebce041ebf")
+	)
+	(junction
+		(at 120.65 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a75c339c-011a-49be-b5fa-8c42e71ea817")
+	)
+	(junction
+		(at 243.84 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8ec0e92-1c3b-4c68-a6e7-667cc7d1e438")
+	)
+	(junction
+		(at 107.95 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af015766-d46d-46ec-bb16-daca8e480c24")
+	)
+	(junction
+		(at 113.03 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b855a71b-e450-4a17-9c3a-2dce5809fb15")
+	)
+	(junction
+		(at 210.82 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9c04959-b624-4144-b073-d200d521ed9e")
+	)
+	(junction
+		(at 95.25 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bceff3e6-0d8d-4c5b-a1c5-df8b7b0306a2")
+	)
+	(junction
+		(at 205.74 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be9f2c62-9d05-402f-83ac-7b7286f3ffae")
+	)
+	(junction
+		(at 113.03 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfb9100e-8805-4ca8-8782-71e807ec3b1b")
+	)
+	(junction
+		(at 138.43 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0e041f6-f746-443b-b47f-7af3299cfeca")
+	)
+	(junction
+		(at 100.33 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1f64035-7d50-4040-9fd4-7569a25d7d68")
+	)
+	(junction
+		(at 243.84 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2a55354-56fc-40af-9120-88c1d1d2ded5")
+	)
+	(junction
+		(at 205.74 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c49e096f-7463-44cc-a1ec-b5e622337b6c")
+	)
+	(junction
+		(at 87.63 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5907758-abe1-4673-aaa2-e07992e79a75")
+	)
+	(junction
+		(at 133.35 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c90a7a0e-ff0b-4ecf-9ca1-c6777b3be984")
+	)
+	(junction
+		(at 113.03 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc41f56f-2247-48b9-acd9-924bfc073117")
+	)
+	(junction
+		(at 223.52 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf0f0dd8-c268-45c9-b220-0fcb6fe4712f")
+	)
+	(junction
+		(at 256.54 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf5bbd86-280d-44a2-93bb-766fe675114d")
+	)
+	(junction
+		(at 236.22 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d01fdf1d-0b2a-4a4c-a905-c40130e8157c")
+	)
+	(junction
+		(at 113.03 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d215cb99-da96-4f51-9ffc-09c6bb79b2d0")
+	)
+	(junction
+		(at 133.35 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d21728c2-35e4-4c2e-80d1-f5a8219f54ab")
+	)
+	(junction
+		(at 223.52 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3e361ab-e905-4e4e-b89b-eb5308707b17")
+	)
+	(junction
+		(at 95.25 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5377c36-d17a-4578-849f-5b41036fd837")
+	)
+	(junction
+		(at 193.04 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7af5e19-ed65-4ee6-90fe-e9b0d3e4bc44")
+	)
+	(junction
+		(at 151.13 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8d2efae-31de-41c9-88aa-17e4000ab63c")
+	)
+	(junction
+		(at 151.13 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da3e487b-b99d-42bc-ab87-0befbcb620b2")
+	)
+	(junction
+		(at 95.25 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df8d8db5-3d6e-4ae9-bdd1-f090b3b3bee8")
+	)
+	(junction
+		(at 193.04 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfc1f3f7-f7da-4e4a-b872-6bd37b91572f")
+	)
+	(junction
+		(at 120.65 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dff19b66-fa4e-4509-beb2-c4ef4eb733e8")
+	)
+	(junction
+		(at 74.93 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e200b666-50f9-47c6-bba2-6e861931e1c1")
+	)
+	(junction
+		(at 218.44 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e308e607-3a5c-4a5b-8722-1a8b5021d541")
+	)
+	(junction
+		(at 236.22 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e34ad9e1-f8a6-4dc4-94e1-e6a111ac31f0")
+	)
+	(junction
+		(at 87.63 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3557cd4-7613-4c70-9376-2d92795b02e8")
+	)
+	(junction
+		(at 198.12 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e39a7d85-8b25-4998-a61e-f09a457987f2")
+	)
+	(junction
+		(at 261.62 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3e6d3d7-61c1-428c-873f-bc01f7b0dca5")
+	)
+	(junction
+		(at 125.73 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e402e51d-b1fa-436c-98e7-df20ce242d40")
+	)
+	(junction
+		(at 74.93 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e61cf447-13bc-42c6-a8f8-541d43477aa2")
+	)
+	(junction
+		(at 231.14 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7ddbb1c-5da1-4ffa-af00-65097974c369")
+	)
+	(junction
+		(at 274.32 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec22cdcf-072d-4662-abd1-4e0e2009031f")
+	)
+	(junction
+		(at 248.92 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed54af6f-d8e6-468d-8830-78a6064a2b42")
+	)
+	(junction
+		(at 95.25 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6bfb78a-f33a-4016-9e9e-ef87ce8a0ceb")
+	)
+	(junction
+		(at 223.52 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8ba8a20-8a6c-46fe-b7a3-8f57e0b27d51")
+	)
+	(junction
+		(at 243.84 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9d88ca5-f439-4e87-964d-97bbe57a32fe")
+	)
+	(junction
+		(at 95.25 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa4c1200-3180-462c-bb62-ff049a3a9cea")
+	)
+	(junction
+		(at 223.52 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc232c22-10f7-45de-9ade-4a2155fcdf6c")
+	)
+	(junction
+		(at 125.73 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd8c637d-f1a4-405e-9ae5-c7f7e8718aa7")
+	)
+	(junction
+		(at 100.33 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe4c1892-7856-4297-9f22-2024da0d8b4e")
+	)
+	(wire
+		(pts
+			(xy 87.63 187.96) (xy 62.23 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00a5aa02-e8d5-4d59-8140-da2c299e9c39")
+	)
+	(wire
+		(pts
+			(xy 74.93 161.29) (xy 74.93 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00ab1d86-0bcf-42b7-9eb2-87fded07412a")
+	)
+	(wire
+		(pts
+			(xy 176.53 39.37) (xy 172.72 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "023736ce-093d-4bf5-b872-727961dc2133")
+	)
+	(wire
+		(pts
+			(xy 236.22 50.8) (xy 236.22 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02bda235-4a99-4d09-a9cd-95fec94026e1")
+	)
+	(wire
+		(pts
+			(xy 198.12 63.5) (xy 198.12 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03a6d733-2796-4780-87c0-6aeb26debc1a")
+	)
+	(wire
+		(pts
+			(xy 231.14 20.32) (xy 243.84 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04f5290a-f2bd-402e-ab3a-2d328709bbbc")
+	)
+	(wire
+		(pts
+			(xy 193.04 58.42) (xy 190.5 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06fa2c1b-61d6-4ba6-b03b-9bf5c2e420d8")
+	)
+	(wire
+		(pts
+			(xy 151.13 194.31) (xy 55.88 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06fc26f5-e498-44f5-a7d0-e2365ae7f115")
+	)
+	(wire
+		(pts
+			(xy 177.8 90.17) (xy 172.72 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07d40acc-f9fb-48da-8b0c-a8b89de13b98")
+	)
+	(wire
+		(pts
+			(xy 198.12 101.6) (xy 185.42 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0879048a-79bf-4163-b331-637a9adde57a")
+	)
+	(wire
+		(pts
+			(xy 100.33 110.49) (xy 100.33 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bba09e7-215f-430f-99d2-734e470ce289")
+	)
+	(wire
+		(pts
+			(xy 205.74 33.02) (xy 176.53 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c083af4-60d8-4872-8c8c-7134b00137ba")
+	)
+	(wire
+		(pts
+			(xy 218.44 33.02) (xy 231.14 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d789016-a7a5-436b-915d-67da251360ed")
+	)
+	(wire
+		(pts
+			(xy 190.5 58.42) (xy 190.5 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ef241d0-8513-4d60-b4b3-8e70f90d4735")
+	)
+	(wire
+		(pts
+			(xy 107.95 168.91) (xy 120.65 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f9a4b18-cc3d-4043-8c84-b66b68496166")
+	)
+	(wire
+		(pts
+			(xy 100.33 173.99) (xy 100.33 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "123a96cd-000d-44b3-9863-f353d83f2022")
+	)
+	(wire
+		(pts
+			(xy 184.15 102.87) (xy 184.15 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1301f024-29cd-479e-8bed-4a17b58d85e1")
+	)
+	(wire
+		(pts
+			(xy 151.13 135.89) (xy 151.13 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13cada8e-02ae-4f0c-83a5-1d169940a1e5")
+	)
+	(wire
+		(pts
+			(xy 95.25 105.41) (xy 107.95 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1490ae12-0cc2-4811-8d3d-bf39879cf3ab")
+	)
+	(wire
+		(pts
+			(xy 87.63 148.59) (xy 87.63 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1493c80c-5204-4142-bf0e-75a7fcc07a8d")
+	)
+	(wire
+		(pts
+			(xy 67.31 127) (xy 53.34 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14e07bc1-9a98-4efb-a3d6-871e4e68c129")
+	)
+	(wire
+		(pts
+			(xy 60.96 189.23) (xy 60.96 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16096522-faad-4103-802b-06ccb0596850")
+	)
+	(wire
+		(pts
+			(xy 248.92 88.9) (xy 248.92 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16581dbc-1155-4fb5-966b-052c164d9f0c")
+	)
+	(wire
+		(pts
+			(xy 138.43 148.59) (xy 138.43 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17a7f66c-0b4d-482f-9aed-86df464b7219")
+	)
+	(wire
+		(pts
+			(xy 66.04 168.91) (xy 66.04 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17c8625e-c210-410c-99f3-56ef9518f582")
+	)
+	(wire
+		(pts
+			(xy 87.63 173.99) (xy 87.63 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "190ef0b4-441d-45a4-a7a1-61aa8733dc0a")
+	)
+	(wire
+		(pts
+			(xy 193.04 71.12) (xy 205.74 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "197a2966-ee63-4bdc-be37-9edd59b00de1")
+	)
+	(wire
+		(pts
+			(xy 210.82 102.87) (xy 184.15 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a2521de-80a3-468a-b6de-5611d79649fc")
+	)
+	(wire
+		(pts
+			(xy 248.92 38.1) (xy 248.92 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c0e6c3d-7ec4-4c78-9ef8-4273991935f6")
+	)
+	(wire
+		(pts
+			(xy 261.62 88.9) (xy 261.62 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c6910b8-673f-47f1-beed-0df26edb0d16")
+	)
+	(wire
+		(pts
+			(xy 210.82 88.9) (xy 210.82 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e70a61c-e7a9-4d3f-8aae-e7d29c25fb95")
+	)
+	(wire
+		(pts
+			(xy 193.04 45.72) (xy 205.74 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f3c8e72-77d4-41ff-be36-c183f297a953")
+	)
+	(wire
+		(pts
+			(xy 133.35 156.21) (xy 146.05 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2258f429-3ddc-42d6-9923-cd75cc5d964f")
+	)
+	(wire
+		(pts
+			(xy 100.33 148.59) (xy 100.33 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22f425e2-4d86-48e8-9879-561dedd2ba58")
+	)
+	(wire
+		(pts
+			(xy 125.73 123.19) (xy 125.73 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24929b35-25e9-45ec-8076-01b97b66f7f2")
+	)
+	(wire
+		(pts
+			(xy 138.43 123.19) (xy 138.43 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24e9278f-2bfd-41d2-b54f-92e163a4a5a0")
+	)
+	(wire
+		(pts
+			(xy 69.85 130.81) (xy 69.85 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26ce4e22-4c23-4664-a02f-505b2c38c910")
+	)
+	(wire
+		(pts
+			(xy 113.03 110.49) (xy 113.03 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27cb45ea-30a2-452a-ab75-f02b965abca5")
+	)
+	(wire
+		(pts
+			(xy 189.23 46.99) (xy 172.72 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c490d5f-3c9a-4ece-b18e-3368f00fad0d")
+	)
+	(wire
+		(pts
+			(xy 133.35 130.81) (xy 146.05 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cd4713b-17d3-44c0-943f-c0d4b4e888d7")
+	)
+	(wire
+		(pts
+			(xy 231.14 45.72) (xy 243.84 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ec8769a-93f1-4c95-8f44-0be46fa13100")
+	)
+	(wire
+		(pts
+			(xy 218.44 20.32) (xy 231.14 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3589e912-230b-40a2-a275-aeedb0e251a7")
+	)
+	(wire
+		(pts
+			(xy 261.62 38.1) (xy 261.62 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38aaf25e-f81c-4ca9-aff5-1d21ce28c8a9")
+	)
+	(wire
+		(pts
+			(xy 125.73 161.29) (xy 125.73 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39098edb-a815-4ed6-a799-256a345981b2")
+	)
+	(wire
+		(pts
+			(xy 181.61 82.55) (xy 172.72 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a688deb-17bb-4520-80a7-4e269192af17")
+	)
+	(wire
+		(pts
+			(xy 100.33 186.69) (xy 100.33 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b947f73-1466-4da8-9564-61fb1975cbe6")
+	)
+	(wire
+		(pts
+			(xy 248.92 50.8) (xy 248.92 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3be8827e-0f48-4d97-8c8f-b0dde2da0166")
+	)
+	(wire
+		(pts
+			(xy 236.22 63.5) (xy 236.22 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e8ad050-a846-4480-ab8c-84e7360e78dc")
+	)
+	(wire
+		(pts
+			(xy 95.25 181.61) (xy 107.95 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e8c98e5-14d0-4788-a05d-c2fed55f1bdd")
+	)
+	(wire
+		(pts
+			(xy 186.69 96.52) (xy 186.69 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f735d5a-9074-4bd9-bfab-aade21ee2646")
+	)
+	(wire
+		(pts
+			(xy 274.32 50.8) (xy 274.32 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40475601-0a64-4064-a114-56e97942e5f3")
+	)
+	(wire
+		(pts
+			(xy 223.52 38.1) (xy 223.52 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "443e901f-800b-4993-aa43-131bb87a3da9")
+	)
+	(wire
+		(pts
+			(xy 68.58 143.51) (xy 68.58 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4489d94d-3468-4636-b34a-be9141eaa43a")
+	)
+	(wire
+		(pts
+			(xy 256.54 58.42) (xy 269.24 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44a54593-1607-4879-bb28-aa61e83064f4")
+	)
+	(wire
+		(pts
+			(xy 243.84 45.72) (xy 256.54 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44e410e8-fc9c-4bfc-910a-da6cfceea596")
+	)
+	(wire
+		(pts
+			(xy 138.43 135.89) (xy 138.43 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "455d9dcd-bf47-4046-9650-967c5232340a")
+	)
+	(wire
+		(pts
+			(xy 231.14 71.12) (xy 243.84 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c240cd-4c0a-4e5f-8472-36614446146c")
+	)
+	(wire
+		(pts
+			(xy 243.84 58.42) (xy 256.54 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "462275c8-67be-4cbb-97de-9e0510073b2c")
+	)
+	(wire
+		(pts
+			(xy 189.23 71.12) (xy 189.23 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4750e4cd-2a39-4f99-aafd-b7d9f9cfe8ac")
+	)
+	(wire
+		(pts
+			(xy 190.5 44.45) (xy 172.72 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47c0f221-b17a-4292-b13c-be7378dd1b39")
+	)
+	(wire
+		(pts
+			(xy 59.69 162.56) (xy 53.34 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47d98f88-b5e8-4ae7-8766-6d84f64593e9")
+	)
+	(wire
+		(pts
+			(xy 107.95 181.61) (xy 120.65 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49acb63d-fe2c-481c-8f9c-cbc4aeaf492e")
+	)
+	(wire
+		(pts
+			(xy 95.25 143.51) (xy 107.95 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4acd6f2a-e14e-4068-aa08-2ccfea102677")
+	)
+	(wire
+		(pts
+			(xy 82.55 118.11) (xy 78.74 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4afd96e1-c1e0-4311-bd71-2cfa4473eef1")
+	)
+	(wire
+		(pts
+			(xy 223.52 76.2) (xy 223.52 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b4519d0-57bc-4eed-b9e2-ca2d588a848d")
+	)
+	(wire
+		(pts
+			(xy 236.22 25.4) (xy 236.22 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d450988-511b-4a26-a547-a695f1ca75c4")
+	)
+	(wire
+		(pts
+			(xy 180.34 106.68) (xy 180.34 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4debc23a-4c58-4e72-b722-12e755dd8f58")
+	)
+	(wire
+		(pts
+			(xy 57.15 167.64) (xy 53.34 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e069a67-3360-405e-996c-a829d7dff466")
+	)
+	(wire
+		(pts
+			(xy 95.25 181.61) (xy 69.85 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ea9c03d-f7c6-4957-bdbf-c176e5d8820f")
+	)
+	(wire
+		(pts
+			(xy 78.74 119.38) (xy 53.34 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ee13871-e926-472f-ae5f-6ca081802559")
+	)
+	(wire
+		(pts
+			(xy 125.73 186.69) (xy 125.73 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50683de1-d3d0-4b12-9fe3-79e41618c775")
+	)
+	(wire
+		(pts
+			(xy 231.14 96.52) (xy 243.84 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51f9fe08-3c6f-4d28-8bbd-0477f87eaddd")
+	)
+	(wire
+		(pts
+			(xy 138.43 193.04) (xy 57.15 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "526c622f-caeb-4882-9425-9972f86937f5")
+	)
+	(wire
+		(pts
+			(xy 218.44 83.82) (xy 231.14 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52ebaf45-6486-4ecb-888c-190ba9b72abf")
+	)
+	(wire
+		(pts
+			(xy 193.04 96.52) (xy 218.44 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53cb4aa8-6b36-4d52-978b-9349eddaec37")
+	)
+	(wire
+		(pts
+			(xy 210.82 63.5) (xy 210.82 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53ff5c26-f44c-4851-8aef-e7e95aee3800")
+	)
+	(wire
+		(pts
+			(xy 74.93 186.69) (xy 63.5 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "545e64a0-21a6-4f04-a49d-966949f4f64d")
+	)
+	(wire
+		(pts
+			(xy 193.04 45.72) (xy 191.77 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54af398c-c341-4a4f-b8a6-706141b57b66")
+	)
+	(wire
+		(pts
+			(xy 87.63 135.89) (xy 87.63 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58761ebc-f2b4-4291-b749-042e2cd251b2")
+	)
+	(wire
+		(pts
+			(xy 107.95 156.21) (xy 120.65 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c81ae87-09d1-4e78-b49d-e83ab7faed97")
+	)
+	(wire
+		(pts
+			(xy 58.42 191.77) (xy 58.42 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cf52042-6e8d-4bb8-9ea0-8720d80f6195")
+	)
+	(wire
+		(pts
+			(xy 62.23 187.96) (xy 62.23 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e6511ce-66ed-491e-a457-53798731fc69")
+	)
+	(wire
+		(pts
+			(xy 95.25 130.81) (xy 107.95 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ff6be3a-7cc9-4423-bd0e-41c7f968f744")
+	)
+	(wire
+		(pts
+			(xy 191.77 41.91) (xy 172.72 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60428aad-2605-4681-a889-f4087b000198")
+	)
+	(wire
+		(pts
+			(xy 82.55 143.51) (xy 95.25 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62409cea-3a7a-404a-9216-3a992330f21e")
+	)
+	(wire
+		(pts
+			(xy 243.84 33.02) (xy 256.54 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6593d717-409e-4d76-921a-162b0332b626")
+	)
+	(wire
+		(pts
+			(xy 113.03 186.69) (xy 113.03 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67724feb-a3e0-424e-8709-cf52b02c2876")
+	)
+	(wire
+		(pts
+			(xy 243.84 83.82) (xy 256.54 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67d8b688-4bca-4ac3-a635-7cabe881d701")
+	)
+	(wire
+		(pts
+			(xy 210.82 38.1) (xy 210.82 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "687fd37a-1bc7-48f1-b43d-1ffe001cb273")
+	)
+	(wire
+		(pts
+			(xy 248.92 25.4) (xy 248.92 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a69645e-5580-4916-b9df-aee4ec636f5f")
+	)
+	(wire
+		(pts
+			(xy 223.52 101.6) (xy 223.52 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c83f322-342b-479e-a7d1-01769a2cc1ba")
+	)
+	(wire
+		(pts
+			(xy 223.52 104.14) (xy 182.88 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d24df75-98d7-4076-b0e3-a74d18d42996")
+	)
+	(wire
+		(pts
+			(xy 107.95 105.41) (xy 120.65 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d471713-fa73-43ba-872c-db9a708b59ab")
+	)
+	(wire
+		(pts
+			(xy 74.93 148.59) (xy 74.93 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dc95096-f702-47c2-8765-3c486db514d2")
+	)
+	(wire
+		(pts
+			(xy 68.58 124.46) (xy 53.34 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e9771e5-4b56-4429-8f25-80786c5a785e")
+	)
+	(wire
+		(pts
+			(xy 176.53 33.02) (xy 176.53 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eaed78a-d464-48ec-9f29-65aa988246eb")
+	)
+	(wire
+		(pts
+			(xy 69.85 156.21) (xy 67.31 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f5e5975-c90b-47ea-9e26-3a46763e46ef")
+	)
+	(wire
+		(pts
+			(xy 55.88 170.18) (xy 53.34 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7137f720-3a0c-4f41-8f77-046f0a0f15ad")
+	)
+	(wire
+		(pts
+			(xy 179.07 107.95) (xy 179.07 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71b10881-00ba-45f7-a9da-c8cf97a7992b")
+	)
+	(wire
+		(pts
+			(xy 53.34 121.92) (xy 69.85 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72180e71-bfdc-4c69-b2c7-675201579438")
+	)
+	(wire
+		(pts
+			(xy 57.15 193.04) (xy 57.15 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72272a00-4e1f-4eef-8b4d-67b38ecc048b")
+	)
+	(wire
+		(pts
+			(xy 248.92 76.2) (xy 248.92 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "724edd98-eef2-40a7-8d04-5c41af68ee9a")
+	)
+	(wire
+		(pts
+			(xy 261.62 107.95) (xy 179.07 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "725a3762-26a8-48d5-bfa6-a6d86da5295f")
+	)
+	(wire
+		(pts
+			(xy 191.77 45.72) (xy 191.77 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7267ec19-6aa5-4623-926e-ba2b274b26fc")
+	)
+	(wire
+		(pts
+			(xy 113.03 173.99) (xy 113.03 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73a7a49d-6de7-4ac8-8380-29ee37884a95")
+	)
+	(wire
+		(pts
+			(xy 175.26 36.83) (xy 172.72 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73fd0b50-054f-4ca9-9ab3-6717aff4a87c")
+	)
+	(wire
+		(pts
+			(xy 95.25 168.91) (xy 107.95 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78964852-f4e2-41bb-8f6a-318b6cd25ccd")
+	)
+	(wire
+		(pts
+			(xy 120.65 168.91) (xy 133.35 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a9e1005-65ee-4fbb-b967-6860f905b4af")
+	)
+	(wire
+		(pts
+			(xy 125.73 148.59) (xy 125.73 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c6ff965-7360-47fd-8dd6-53253a949b51")
+	)
+	(wire
+		(pts
+			(xy 113.03 123.19) (xy 113.03 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cd2edc5-7911-408f-b14e-216f2571a55c")
+	)
+	(wire
+		(pts
+			(xy 210.82 50.8) (xy 210.82 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d48df30-b82c-4a21-a84a-69e4b9f4270d")
+	)
+	(wire
+		(pts
+			(xy 151.13 148.59) (xy 151.13 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e0d98fd-1e2d-4cdb-bda5-aac264813fe8")
+	)
+	(wire
+		(pts
+			(xy 74.93 116.84) (xy 53.34 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8037486f-86df-463c-a9b1-3fce9db1ce58")
+	)
+	(wire
+		(pts
+			(xy 95.25 105.41) (xy 74.93 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80bf327e-d41c-4842-b9b8-203532023d80")
+	)
+	(wire
+		(pts
+			(xy 223.52 63.5) (xy 223.52 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81b0a571-2194-4de8-b11a-8db1a054e3e0")
+	)
+	(wire
+		(pts
+			(xy 236.22 101.6) (xy 236.22 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81d04513-ac14-489f-bb6e-9a10514f2345")
+	)
+	(wire
+		(pts
+			(xy 125.73 191.77) (xy 58.42 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "843ef439-7ef1-46bb-a740-be4ca9a0c2b7")
+	)
+	(wire
+		(pts
+			(xy 231.14 58.42) (xy 243.84 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "845d4b8d-4d38-4e17-acca-9deefdcce038")
+	)
+	(wire
+		(pts
+			(xy 69.85 143.51) (xy 68.58 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84685fea-bdd3-4fe7-a6dd-10d33ed495cd")
+	)
+	(wire
+		(pts
+			(xy 59.69 190.5) (xy 59.69 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8512c8bf-d00f-4b3f-b603-3209b872cb96")
+	)
+	(wire
+		(pts
+			(xy 55.88 194.31) (xy 55.88 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8557d7ea-f290-415d-ac82-9d91d20c5f4e")
+	)
+	(wire
+		(pts
+			(xy 62.23 157.48) (xy 53.34 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "873cda8e-6661-4afd-b413-bcfef7000d03")
+	)
+	(wire
+		(pts
+			(xy 210.82 76.2) (xy 210.82 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88e51361-40b4-420f-bab6-f3339451cf9c")
+	)
+	(wire
+		(pts
+			(xy 120.65 130.81) (xy 133.35 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88f43671-8dc3-4238-b050-d30190d873fa")
+	)
+	(wire
+		(pts
+			(xy 256.54 71.12) (xy 269.24 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a74b677-8c20-441b-84b7-29362f1183de")
+	)
+	(wire
+		(pts
+			(xy 187.96 49.53) (xy 172.72 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a840587-887e-4741-a242-da5a0f0847f9")
+	)
+	(wire
+		(pts
+			(xy 218.44 96.52) (xy 231.14 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bf31eaf-fdfc-44f9-ad63-6921ef6908a7")
+	)
+	(wire
+		(pts
+			(xy 74.93 135.89) (xy 74.93 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8df73fdc-2c8b-424a-98db-53b985dc57ac")
+	)
+	(wire
+		(pts
+			(xy 107.95 143.51) (xy 120.65 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fdda0b8-09f2-4ae3-b754-18982db4eedf")
+	)
+	(wire
+		(pts
+			(xy 133.35 143.51) (xy 146.05 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91765bc7-262c-4409-b45f-8a7a0be53011")
+	)
+	(wire
+		(pts
+			(xy 182.88 104.14) (xy 182.88 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91782cb8-c8b6-4e68-a80e-b0090472ca1d")
+	)
+	(wire
+		(pts
+			(xy 113.03 148.59) (xy 113.03 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91fcb353-e6a2-4dc2-9fa2-9593e1517811")
+	)
+	(wire
+		(pts
+			(xy 261.62 63.5) (xy 261.62 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9290451f-b867-4b59-beab-e46d08765e0b")
+	)
+	(wire
+		(pts
+			(xy 236.22 88.9) (xy 236.22 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "944350c8-5718-41c2-ae9d-19a7b40cd517")
+	)
+	(wire
+		(pts
+			(xy 67.31 156.21) (xy 67.31 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "960a72cc-12a0-44ee-a712-0731707653ac")
+	)
+	(wire
+		(pts
+			(xy 205.74 58.42) (xy 218.44 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96d95adc-1dbc-4fef-986d-f9c76dd11e9d")
+	)
+	(wire
+		(pts
+			(xy 95.25 156.21) (xy 107.95 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ac7350b-ad7d-4508-86ee-e10bdc979e52")
+	)
+	(wire
+		(pts
+			(xy 243.84 71.12) (xy 256.54 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b898cc8-f784-449e-bcde-8e362c998397")
+	)
+	(wire
+		(pts
+			(xy 248.92 63.5) (xy 248.92 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cc5a4e6-a26e-429f-bd81-5a966aa47976")
+	)
+	(wire
+		(pts
+			(xy 180.34 85.09) (xy 172.72 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d0c32be-ee79-4ad8-98c0-3033c2700746")
+	)
+	(wire
+		(pts
+			(xy 125.73 173.99) (xy 125.73 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e079308-5e62-45db-90c1-4a363bbd3408")
+	)
+	(wire
+		(pts
+			(xy 100.33 161.29) (xy 100.33 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e69f490-6742-4939-95ae-093affe3191f")
+	)
+	(wire
+		(pts
+			(xy 69.85 143.51) (xy 82.55 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e746753-f4ef-4b8e-918e-2a3146a73ca3")
+	)
+	(wire
+		(pts
+			(xy 87.63 161.29) (xy 87.63 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a03dcc09-182c-46a6-b76c-3cd008d5bb56")
+	)
+	(wire
+		(pts
+			(xy 193.04 71.12) (xy 189.23 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a13ca8aa-def8-4c98-a6e6-17777be0e894")
+	)
+	(wire
+		(pts
+			(xy 223.52 50.8) (xy 223.52 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a261b0fa-666f-4c54-8606-a6c14a490248")
+	)
+	(wire
+		(pts
+			(xy 58.42 165.1) (xy 53.34 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2b8236b-e789-423f-b9d4-bd4e35f1f00c")
+	)
+	(wire
+		(pts
+			(xy 100.33 123.19) (xy 100.33 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2df65a6-127d-401b-9059-0bd106a1d4a7")
+	)
+	(wire
+		(pts
+			(xy 198.12 50.8) (xy 198.12 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5eff6fd-d9a1-4bbc-a45c-110126cee914")
+	)
+	(wire
+		(pts
+			(xy 261.62 76.2) (xy 261.62 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a64817f5-e322-4cae-b8f5-5cc5bbd47a41")
+	)
+	(wire
+		(pts
+			(xy 113.03 135.89) (xy 113.03 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6bf6a6e-43fb-4a9a-b5f4-abcd10e4aa5a")
+	)
+	(wire
+		(pts
+			(xy 177.8 109.22) (xy 177.8 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8fff45d-77ad-475f-b141-c295cf19c639")
+	)
+	(wire
+		(pts
+			(xy 218.44 20.32) (xy 175.26 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa108776-3c92-45f1-910c-afac575024e1")
+	)
+	(wire
+		(pts
+			(xy 82.55 168.91) (xy 95.25 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad0c04b3-5b85-466f-bb5b-3c50a189627f")
+	)
+	(wire
+		(pts
+			(xy 186.69 52.07) (xy 172.72 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad13ff09-94db-48fd-9194-a32c730e3659")
+	)
+	(wire
+		(pts
+			(xy 66.04 129.54) (xy 53.34 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adbe852e-db09-4dcf-8052-fd15a5522cfe")
+	)
+	(wire
+		(pts
+			(xy 82.55 156.21) (xy 95.25 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af0ebf22-8f7d-4075-ab12-12a5c241bd08")
+	)
+	(wire
+		(pts
+			(xy 120.65 156.21) (xy 133.35 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af72bef1-a5ac-45fe-889b-ef3946c3aec1")
+	)
+	(wire
+		(pts
+			(xy 205.74 45.72) (xy 218.44 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afcb68ee-d0b3-4592-b00f-b5b48c69ca13")
+	)
+	(wire
+		(pts
+			(xy 274.32 63.5) (xy 274.32 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0cf8d6e-915b-4473-91a1-9cebc6d505f8")
+	)
+	(wire
+		(pts
+			(xy 187.96 83.82) (xy 187.96 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b16cdd97-8aa4-4c1e-b7e5-e9ae91fc698b")
+	)
+	(wire
+		(pts
+			(xy 248.92 106.68) (xy 180.34 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1b731ad-a191-4476-bcf4-eecbb433c663")
+	)
+	(wire
+		(pts
+			(xy 223.52 25.4) (xy 223.52 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b26b4626-188f-4f29-9f0e-ed21bcd66a68")
+	)
+	(wire
+		(pts
+			(xy 175.26 20.32) (xy 175.26 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3e74fe7-67ad-409e-9144-1ab83430feb8")
+	)
+	(wire
+		(pts
+			(xy 256.54 45.72) (xy 269.24 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4b439ad-dc84-4177-ba25-4f6838d0f433")
+	)
+	(wire
+		(pts
+			(xy 236.22 105.41) (xy 181.61 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4f77cd5-c1dd-4e33-a0a2-ca0d58142437")
+	)
+	(wire
+		(pts
+			(xy 274.32 76.2) (xy 274.32 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5516f30-c1e3-49b6-ae4d-5a045eab684c")
+	)
+	(wire
+		(pts
+			(xy 236.22 76.2) (xy 236.22 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5bd43a9-3352-4d67-b56b-4ecedbee2b4d")
+	)
+	(wire
+		(pts
+			(xy 205.74 71.12) (xy 218.44 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b81c4772-ef07-47f8-9555-5fbdd806e62f")
+	)
+	(wire
+		(pts
+			(xy 193.04 58.42) (xy 205.74 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b88bb151-051e-45af-ba01-cd1a34030f24")
+	)
+	(wire
+		(pts
+			(xy 138.43 173.99) (xy 138.43 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8e1147d-404d-4427-9d3a-984b033b03a7")
+	)
+	(wire
+		(pts
+			(xy 107.95 118.11) (xy 120.65 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b931acc4-e590-4f07-b38c-51170fa30661")
+	)
+	(wire
+		(pts
+			(xy 205.74 83.82) (xy 187.96 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba285704-e320-4ebc-adec-cbe2f28db69d")
+	)
+	(wire
+		(pts
+			(xy 151.13 161.29) (xy 151.13 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcb7cf6a-c5ea-41fa-a931-0e3fbd465e11")
+	)
+	(wire
+		(pts
+			(xy 113.03 161.29) (xy 113.03 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c214faa5-8a92-4a28-942b-25d0976cd6eb")
+	)
+	(wire
+		(pts
+			(xy 125.73 135.89) (xy 125.73 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c429c3ac-d2da-4cac-b622-5432c828adab")
+	)
+	(wire
+		(pts
+			(xy 107.95 130.81) (xy 120.65 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb12159c-2527-406b-83f4-9d50c3736fd0")
+	)
+	(wire
+		(pts
+			(xy 223.52 88.9) (xy 223.52 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc9499d7-ba12-442d-9303-5a13b77e3e36")
+	)
+	(wire
+		(pts
+			(xy 261.62 50.8) (xy 261.62 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd7cb183-325c-45aa-8d13-34857356ecd6")
+	)
+	(wire
+		(pts
+			(xy 182.88 80.01) (xy 172.72 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce90dccb-1ee4-459a-8024-4a6f4ba4790a")
+	)
+	(wire
+		(pts
+			(xy 60.96 160.02) (xy 53.34 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf3d4061-f054-4624-8525-6c3e400bd619")
+	)
+	(wire
+		(pts
+			(xy 274.32 109.22) (xy 177.8 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d37e77fd-c096-4787-adf7-cbfdffca60ec")
+	)
+	(wire
+		(pts
+			(xy 64.77 132.08) (xy 53.34 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d75bfa4b-3e19-4f21-9504-2b96e46e7942")
+	)
+	(wire
+		(pts
+			(xy 87.63 123.19) (xy 87.63 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9421bee-c9da-4910-8ea7-b2d385cf63aa")
+	)
+	(wire
+		(pts
+			(xy 63.5 186.69) (xy 63.5 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da39198f-af6a-4d99-8c2e-46dbb9cbb11d")
+	)
+	(wire
+		(pts
+			(xy 179.07 87.63) (xy 172.72 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dab6b83e-97fe-4e78-a406-5738f59420ac")
+	)
+	(wire
+		(pts
+			(xy 125.73 110.49) (xy 125.73 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd11ec29-bc10-42e5-b557-12c534bb284f")
+	)
+	(wire
+		(pts
+			(xy 82.55 118.11) (xy 95.25 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df5b35a3-6d2f-48bd-8249-8b0a8f0eea07")
+	)
+	(wire
+		(pts
+			(xy 185.42 74.93) (xy 172.72 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfbcc822-7257-41d1-904d-dba6e1e29532")
+	)
+	(wire
+		(pts
+			(xy 193.04 96.52) (xy 186.69 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0965bf9-c733-47f7-a9cf-8a580d466a54")
+	)
+	(wire
+		(pts
+			(xy 184.15 77.47) (xy 172.72 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e107a29d-4014-43f3-872f-1b595e6c08ac")
+	)
+	(wire
+		(pts
+			(xy 95.25 118.11) (xy 107.95 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e28c4ca3-85be-4d94-91a0-c8e35a417b0e")
+	)
+	(wire
+		(pts
+			(xy 69.85 130.81) (xy 82.55 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2913f71-38a8-4d42-bb86-fd29014d04bf")
+	)
+	(wire
+		(pts
+			(xy 120.65 118.11) (xy 133.35 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2ebc8dd-391a-4fee-8471-51ecce5f2a4c")
+	)
+	(wire
+		(pts
+			(xy 69.85 181.61) (xy 64.77 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2fec36d-a2c4-4374-a51c-e15b9ba4ceb6")
+	)
+	(wire
+		(pts
+			(xy 120.65 143.51) (xy 133.35 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e52b8cf7-c9d4-416d-b65a-c78591bf214c")
+	)
+	(wire
+		(pts
+			(xy 78.74 118.11) (xy 78.74 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6184098-cbd3-4ec3-94da-f12f14a45c57")
+	)
+	(wire
+		(pts
+			(xy 138.43 161.29) (xy 138.43 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8c6f426-e95f-4bbc-b6e2-7c86911a1142")
+	)
+	(wire
+		(pts
+			(xy 198.12 76.2) (xy 198.12 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9cb0321-da23-4d0f-976f-81654e4d525d")
+	)
+	(wire
+		(pts
+			(xy 236.22 38.1) (xy 236.22 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea65f80f-94ea-4bad-a841-4e1e072be7b5")
+	)
+	(wire
+		(pts
+			(xy 64.77 181.61) (xy 64.77 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea9c747f-e3a6-43d0-a44a-9906ca0b8e5d")
+	)
+	(wire
+		(pts
+			(xy 74.93 105.41) (xy 74.93 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb863319-c12d-41a4-a553-0015e12adc7a")
+	)
+	(wire
+		(pts
+			(xy 185.42 101.6) (xy 185.42 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb86c591-c8fb-4afc-ae08-b018a9c4c40e")
+	)
+	(wire
+		(pts
+			(xy 82.55 130.81) (xy 95.25 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec32b8f5-8ea6-47ad-abff-fc46138773bb")
+	)
+	(wire
+		(pts
+			(xy 248.92 101.6) (xy 248.92 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec91f561-e9d0-4064-bb60-14dc2212101b")
+	)
+	(wire
+		(pts
+			(xy 218.44 45.72) (xy 231.14 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed72ae73-0a4a-4b0d-a113-18f2b4bde9da")
+	)
+	(wire
+		(pts
+			(xy 205.74 33.02) (xy 218.44 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ede3cded-0499-45d7-8f7a-3e0f540886de")
+	)
+	(wire
+		(pts
+			(xy 205.74 83.82) (xy 218.44 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeeea945-1454-47ce-a175-8578496c1bba")
+	)
+	(wire
+		(pts
+			(xy 218.44 71.12) (xy 231.14 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef85ad17-dd3a-428d-8c48-3f83026928dd")
+	)
+	(wire
+		(pts
+			(xy 181.61 105.41) (xy 181.61 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f02e2c87-a5e3-4023-8e20-dcb319229797")
+	)
+	(wire
+		(pts
+			(xy 231.14 83.82) (xy 243.84 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f23c32d5-0d62-41cb-8a60-5002204dfea1")
+	)
+	(wire
+		(pts
+			(xy 231.14 33.02) (xy 243.84 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e4d75e-e2cd-4202-8aad-babe8b0599d7")
+	)
+	(wire
+		(pts
+			(xy 63.5 154.94) (xy 53.34 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f52ca623-eb68-4ee1-9716-e58a63b8e014")
+	)
+	(wire
+		(pts
+			(xy 69.85 156.21) (xy 82.55 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6059c62-65fa-45d8-8b7a-6ec2421be93f")
+	)
+	(wire
+		(pts
+			(xy 100.33 189.23) (xy 60.96 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f75dc86e-cfc2-48b1-a080-68bb4f6ca4fd")
+	)
+	(wire
+		(pts
+			(xy 100.33 135.89) (xy 100.33 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7dce279-82e1-4fdc-8965-52b768abfd0b")
+	)
+	(wire
+		(pts
+			(xy 113.03 190.5) (xy 59.69 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb6b0f7e-aee2-4938-b632-1969fab9706a")
+	)
+	(wire
+		(pts
+			(xy 82.55 168.91) (xy 66.04 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe7d7c25-2454-48e0-873d-d3e893287ae4")
+	)
+	(wire
+		(pts
+			(xy 218.44 58.42) (xy 231.14 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe817292-ef54-49ec-96af-fa6ea6a7c7d8")
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 43.18 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "03646d99-2a3b-4335-b5d2-1674f845a49a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.5662 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 152.4 87.63 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "03eac1b3-39a4-4c2c-9367-7fea08615610")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.7862 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 46.99 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "055151fd-55d5-4be7-b040-ce89cc0c3974")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.4828 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 152.4 36.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "15f839ff-cdcd-4af2-a777-1e871d08b4fb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.9072 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 33.02 129.54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "171f2255-a0d7-4446-bdfc-862dabaf4bfb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.1643 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 31.75 15.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "21cb876a-0a8e-44de-bc8e-8ce84879c048")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.3638 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 43.18 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "22940f45-eccc-4817-88c1-f698245f4719")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.3243 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 33.02 172.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "365754f9-dcf7-4876-839e-3c0654190e7c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.1643 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 162.56 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "366b153f-7e09-44f8-b317-971704a1bbd9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 155.7043 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 33.02 157.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "39b53a3d-25cb-4df3-9a9a-7d560569f6a6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.4667 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 33.02 170.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3d903028-be97-4b90-8b26-0cd29e01309a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.4062 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 43.18 177.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "45204f3c-e3df-4797-8df9-281230ef1ba7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.3243 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 152.4 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "456adde1-04d0-438b-a35b-2dcedfa416b6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.5443 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 162.56 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "46cd4169-05cf-4840-83a1-bda6f9bbb3b7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 155.9462 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 152.4 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "568b31d0-04fa-41a7-8549-2279e6c48c06")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.8467 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 46.99 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "58c51b45-0275-425d-9b16-4bccda215681")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.5433 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 152.4 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c49d676-e5d8-4d64-85d0-3d4aadc26924")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.9072 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 43.18 149.86 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7e0badf0-f896-41f8-a2c7-d272c793a477")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.5662 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 162.56 31.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7f810976-340d-4f91-aa45-761c29d60233")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 155.9462 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 33.02 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "96494b11-bfcc-44df-b03a-0a01209b4a81")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.1643 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 31.75 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9c78d5ba-26c2-4272-bff8-a9153ead39ae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.6057 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 33.02 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a02db27c-25bc-4d28-8dbb-eb79bbec00da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.4667 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 33.02 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a2063dda-b120-40ce-846b-2186e68a6ec1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.5272 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 152.4 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aa664d2d-f9ef-4f31-ae89-c60f125b2234")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.5443 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 33.02 167.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ab4cc089-54b4-424b-b422-3bd7203b7564")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.4062 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 162.56 59.69 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b4931613-b86e-4b26-a95f-11fbf8a45b27")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 155.7043 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 152.4 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b89764d9-336b-4aef-9828-497efeb21dea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.8467 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 152.4 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bcb89cc2-9580-4989-9b7a-f913dde8e62e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.5443 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 152.4 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bce2cb76-45ee-4a49-af06-94bb59354b7c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.5443 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 33.02 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c598195c-9abf-449b-afbb-e3c689fea12c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.5272 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 152.4 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eebf8f05-77e3-495b-9ee7-06323dd5f9db")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.5443 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 33.02 132.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f1e5d866-17dc-4c74-9da3-318d467d689a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.4062 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 72.39 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "010d6fe8-b85c-4460-8c8c-e727c6a6f627")
+		(property "Reference" "D16"
+			(at 72.39 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 72.39 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 72.39 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 233.68 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01356706-1097-49af-bb5e-268484925f54")
+		(property "Reference" "SW19"
+			(at 233.68 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 233.68 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 233.68 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 110.49 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "027b9595-c2c6-436f-8756-9b5f99f16490")
+		(property "Reference" "D12"
+			(at 110.49 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 110.49 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 110.49 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 246.38 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0382e3a5-3aa4-418e-ab73-066050b4a34a")
+		(property "Reference" "SW27"
+			(at 246.38 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 246.38 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 246.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 110.49 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0830c687-5737-46a6-a7c9-3e275e1b527a")
+		(property "Reference" "D2"
+			(at 110.49 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 110.49 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 110.49 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 220.98 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18f65e9c-54a0-44dd-90d7-607dda70ba24")
+		(property "Reference" "SW36"
+			(at 220.98 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 220.98 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 220.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 72.39 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19b6bf8f-c58a-4b2a-8bf3-b8b8cda559ab")
+		(property "Reference" "D23"
+			(at 72.39 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 72.39 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 72.39 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 72.39 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 233.68 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ece4efa-9ca9-45be-9ef6-0d587cc3aac3")
+		(property "Reference" "SW2"
+			(at 233.68 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 233.68 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 233.68 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5d7f09f-d999-44b5-8391-ee67f406eb75")
+		)
+		(pin "2"
+			(uuid "6aadf449-2700-4af2-88ac-4d4f2f9dad51")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 72.39 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20e7880c-d096-4707-8f5d-cacaad660218")
+		(property "Reference" "D9"
+			(at 72.39 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 72.39 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 72.39 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 72.39 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 97.79 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38b27d2b-e5ea-432e-91c1-479fa2aea58e")
+		(property "Reference" "D1"
+			(at 97.79 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 97.79 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 97.79 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 97.79 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 259.08 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a56ed92-500c-4bf8-9741-85f8d73a9bfb")
+		(property "Reference" "SW34"
+			(at 259.08 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 259.08 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 259.08 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 85.09 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b1b23fd-3b27-47dd-9dff-78389df487a5")
+		(property "Reference" "D24"
+			(at 85.09 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 85.09 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 85.09 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 85.09 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 220.98 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e736ae9-f18a-450c-a63f-79d1012e3d35")
+		(property "Reference" "SW25"
+			(at 220.98 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 220.98 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 220.98 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 220.98 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41402e4c-d3a2-49fb-981b-e98c6d479744")
+		(property "Reference" "SW1"
+			(at 220.98 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 220.98 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 220.98 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5d7f09f-d999-44b5-8391-ee67f406eb75")
+		)
+		(pin "2"
+			(uuid "6aadf449-2700-4af2-88ac-4d4f2f9dad51")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 85.09 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41c971ad-9355-4fea-b245-0b71af872b2c")
+		(property "Reference" "D4"
+			(at 85.09 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 85.09 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 85.09 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 85.09 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 148.59 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48fdf55c-6f12-417f-95aa-a7bcec40d560")
+		(property "Reference" "D29"
+			(at 148.59 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 148.59 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 148.59 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 148.59 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 123.19 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49862ff8-551d-44cc-b43f-411c76cda31e")
+		(property "Reference" "D13"
+			(at 123.19 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 123.19 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 123.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 123.19 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 246.38 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f6005c5-fbf0-4b5b-b954-4c1fe991acfe")
+		(property "Reference" "SW20"
+			(at 246.38 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 246.38 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 246.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 123.19 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50cdcf3d-1630-4aa3-9850-97e732aef0cd")
+		(property "Reference" "D33"
+			(at 123.19 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 123.19 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 123.19 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 123.19 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 259.08 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50f07b27-6e0e-40b9-81d3-a3b8b46b99ce")
+		(property "Reference" "SW8"
+			(at 259.08 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 259.08 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 259.08 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5d7f09f-d999-44b5-8391-ee67f406eb75")
+		)
+		(pin "2"
+			(uuid "6aadf449-2700-4af2-88ac-4d4f2f9dad51")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 135.89 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "544d99bb-fe93-442a-afa7-800f3df92890")
+		(property "Reference" "D34"
+			(at 135.89 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 135.89 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 135.89 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 135.89 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 97.79 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55ee57c8-e4d5-447c-8ea4-24aa7f510c26")
+		(property "Reference" "D11"
+			(at 97.79 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 97.79 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 97.79 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 97.79 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 148.59 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55faee44-6be7-4c53-b2a7-c042bd065e85")
+		(property "Reference" "D22"
+			(at 148.59 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 148.59 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 148.59 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 148.59 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 85.09 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "597423c5-a74d-4644-acd1-e103321b7e41")
+		(property "Reference" "D10"
+			(at 85.09 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 85.09 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 85.09 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 85.09 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 97.79 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59b48fbf-4f30-4faa-b9a3-8ff84bde43ff")
+		(property "Reference" "D18"
+			(at 97.79 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 97.79 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 97.79 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 97.79 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 208.28 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a41ef06-896c-4ca0-b7f7-cb407cd0ae3c")
+		(property "Reference" "SW17"
+			(at 208.28 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 208.28 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 208.28 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 123.19 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b56659f-fcb4-4cb4-ba4a-639411979670")
+		(property "Reference" "D27"
+			(at 123.19 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 123.19 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 123.19 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 123.19 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 246.38 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c2ea13a-d734-4b08-a36f-fca453d8d863")
+		(property "Reference" "SW13"
+			(at 246.38 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 246.38 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 246.38 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1e7ddb9-e808-43b6-814c-73b80f2a24c1")
+		)
+		(pin "2"
+			(uuid "313e8160-b9b4-49dc-b3d2-28efc50969d1")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 195.58 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5de2ec60-b9c1-4956-9dd5-8721a8470c5c")
+		(property "Reference" "SW35"
+			(at 195.58 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 195.58 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 195.58 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5879950b-b7d2-4181-89a9-8b75d0f6068e")
+		)
+		(pin "1"
+			(uuid "abce7474-80a5-4bef-bfa3-a5faa28fa90d")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RF_Module:ESP32-WROOM-32")
+		(at 31.75 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "621e7dca-f8e4-4f26-926a-cf240bffe63a")
+		(property "Reference" "U1"
+			(at 33.8933 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESP32-WROOM-32"
+			(at 33.8933 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "RF_Module:ESP32-WROOM-32"
+			(at 31.75 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf"
+			(at 24.13 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD"
+			(at 31.75 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "32"
+			(uuid "ef971910-5b9d-4bde-9db2-fe1788354a1d")
+		)
+		(pin "15"
+			(uuid "4a2cfdb3-bbe1-48f7-b82b-093c118c6d24")
+		)
+		(pin "39"
+			(uuid "0e7a498b-fd7f-4dcf-a1ce-fd118be85232")
+		)
+		(pin "35"
+			(uuid "bc3219c2-aeac-49e2-8e3d-a803f3e2c1fa")
+		)
+		(pin "34"
+			(uuid "be0264c1-486d-409f-824e-2f5ccbb6e86d")
+		)
+		(pin "29"
+			(uuid "6f5c0d31-d784-4fda-9c75-93369210a14e")
+		)
+		(pin "4"
+			(uuid "58a55725-d411-4200-b807-738bce92463d")
+		)
+		(pin "20"
+			(uuid "2844b925-0c65-464d-b3f7-b278ed379683")
+		)
+		(pin "18"
+			(uuid "a8cd9511-c1ab-40d2-bd79-1b2b9101f305")
+		)
+		(pin "5"
+			(uuid "7ed91ef1-e9e5-4688-a4f6-2554bedee4f6")
+		)
+		(pin "17"
+			(uuid "501a6e57-24a0-4c05-bcb5-d6e3bcfac3cc")
+		)
+		(pin "2"
+			(uuid "080e903c-cbd7-402d-9feb-fc65e4907757")
+		)
+		(pin "1"
+			(uuid "528f18e8-7834-47e1-97a3-c173e8983199")
+		)
+		(pin "21"
+			(uuid "b4ac1b90-ea1f-4977-868b-76d2714905f0")
+		)
+		(pin "22"
+			(uuid "f49cfca2-762f-4716-81be-6d599143477a")
+		)
+		(pin "3"
+			(uuid "6645ac2a-02ba-4239-b1d7-c7b5f1ee415b")
+		)
+		(pin "19"
+			(uuid "6ef47a0d-aff7-4584-b0a9-e5a23485e1ec")
+		)
+		(pin "38"
+			(uuid "24f06578-9b8f-464e-8e52-5b1a88771d5c")
+		)
+		(pin "25"
+			(uuid "af2da894-47c4-4c70-96ce-e5706f79eb13")
+		)
+		(pin "24"
+			(uuid "75f79708-11bc-4231-8472-1447b3602732")
+		)
+		(pin "26"
+			(uuid "09681cab-37ba-473c-97d2-e247bcdc2a8b")
+		)
+		(pin "16"
+			(uuid "59f29791-312e-4bab-9a26-f9f5ab5a3e91")
+		)
+		(pin "9"
+			(uuid "7491fda2-d7f0-4192-ac70-07a75175daaf")
+		)
+		(pin "30"
+			(uuid "f2dd69cb-3b65-4c28-ab99-2f725b1b687b")
+		)
+		(pin "13"
+			(uuid "0da53a5d-7e9f-40d3-bd3c-586234332ddc")
+		)
+		(pin "10"
+			(uuid "b53b03cb-c444-449b-bbec-5066dd764f2a")
+		)
+		(pin "23"
+			(uuid "c3af337a-b0b3-45a4-8191-64a15b016135")
+		)
+		(pin "33"
+			(uuid "8726b69e-c4c0-4fd4-85b8-a0828e388554")
+		)
+		(pin "7"
+			(uuid "67662e0c-f0ac-4d93-a51d-1ffacc121594")
+		)
+		(pin "14"
+			(uuid "7b838c25-dca1-420a-8263-c576ef833f07")
+		)
+		(pin "31"
+			(uuid "2d53c939-54b3-4f86-a116-b63cc6e847fc")
+		)
+		(pin "36"
+			(uuid "3e4eb2d2-d40c-4484-9099-97e2b652545e")
+		)
+		(pin "28"
+			(uuid "fe68febd-cf3a-4671-b045-913edee8028f")
+		)
+		(pin "37"
+			(uuid "2ba73e74-0f5c-49ff-bd75-1164c5041abf")
+		)
+		(pin "11"
+			(uuid "cffb7ed7-8b27-4977-b49d-c9a4dfa1f2ca")
+		)
+		(pin "27"
+			(uuid "d675e901-ed8d-4a23-963c-38a72cd63d3e")
+		)
+		(pin "12"
+			(uuid "9afd6726-da0b-45b5-9e6f-f464fbfc6ccc")
+		)
+		(pin "8"
+			(uuid "2de36ffb-1191-4476-a4f3-fae15418e422")
+		)
+		(pin "6"
+			(uuid "7895bb06-07ae-49de-8a67-9b945a804667")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 246.38 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64efe003-a9da-4516-bb98-7611bd796cd9")
+		(property "Reference" "SW33"
+			(at 246.38 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 246.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 246.38 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 220.98 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69992d71-fe2f-4593-b815-f83c964a170f")
+		(property "Reference" "SW18"
+			(at 220.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 220.98 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 220.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 123.19 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69a0d647-4a75-4446-b84a-858e5377d84d")
+		(property "Reference" "D38"
+			(at 123.19 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 123.19 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 123.19 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 123.19 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 195.58 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69ed98cf-b82a-4bac-aadf-1659a8ac1d03")
+		(property "Reference" "SW23"
+			(at 195.58 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 195.58 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 195.58 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 259.08 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f42dc69-7c61-4924-8dd1-b16ca48022bf")
+		(property "Reference" "SW14"
+			(at 259.08 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 259.08 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 259.08 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1e7ddb9-e808-43b6-814c-73b80f2a24c1")
+		)
+		(pin "2"
+			(uuid "313e8160-b9b4-49dc-b3d2-28efc50969d1")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 110.49 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6fd4dbbb-ba10-44b6-9418-92e28bf60f93")
+		(property "Reference" "D6"
+			(at 110.49 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 110.49 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 110.49 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 208.28 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71a9f488-4b64-4163-be5a-bb4126b4bd4a")
+		(property "Reference" "SW30"
+			(at 208.28 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 208.28 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 208.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 72.39 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a114107-ab42-4e5a-9d67-ae4c241a9dff")
+		(property "Reference" "D35"
+			(at 72.39 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 72.39 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 72.39 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 72.39 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "24fc4e13-a3f1-4a54-b18d-d85fd70b5221")
+		)
+		(pin "1"
+			(uuid "8c344d01-849f-4e36-8ddd-ba3e6321eda6")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 195.58 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "841d2fa0-512d-488d-bf4b-e9b295d85849")
+		(property "Reference" "SW9"
+			(at 195.58 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 195.58 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 195.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1e7ddb9-e808-43b6-814c-73b80f2a24c1")
+		)
+		(pin "2"
+			(uuid "313e8160-b9b4-49dc-b3d2-28efc50969d1")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 259.08 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86b4ab7f-9ebb-44af-a20b-8a9a0e3f5d71")
+		(property "Reference" "SW21"
+			(at 259.08 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 259.08 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 259.08 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 85.09 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89480493-52df-424c-ad90-832ada7540e6")
+		(property "Reference" "D30"
+			(at 85.09 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 85.09 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 85.09 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 85.09 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 123.19 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a5030ea-372f-4974-bc94-30f757af7d87")
+		(property "Reference" "D20"
+			(at 123.19 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 123.19 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 123.19 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 123.19 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 123.19 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b59b65b-3ec9-42c5-8923-f808ce0822d4")
+		(property "Reference" "D7"
+			(at 123.19 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 123.19 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 123.19 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 110.49 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d4c75bb-5426-47af-bcf3-4aa50cc16444")
+		(property "Reference" "D37"
+			(at 110.49 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 110.49 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 110.49 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 233.68 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d8b1aa0-c197-4370-8c0e-c9264f1750b6")
+		(property "Reference" "SW26"
+			(at 233.68 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 233.68 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 233.68 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 271.78 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9103fd79-b34b-4716-b6ba-d0bfc6deaa4b")
+		(property "Reference" "SW22"
+			(at 271.78 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 271.78 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 271.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 208.28 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93410016-9133-47be-83fc-afde097d1d7d")
+		(property "Reference" "SW10"
+			(at 208.28 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 208.28 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 208.28 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1e7ddb9-e808-43b6-814c-73b80f2a24c1")
+		)
+		(pin "2"
+			(uuid "313e8160-b9b4-49dc-b3d2-28efc50969d1")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 271.78 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98b4323c-bc88-475b-82fa-fbece769be50")
+		(property "Reference" "SW29"
+			(at 271.78 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 271.78 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 271.78 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 135.89 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ff8bf59-e122-4196-a084-bb27faf697fc")
+		(property "Reference" "D14"
+			(at 135.89 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 135.89 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 135.89 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 135.89 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 97.79 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3bda113-293f-476f-9899-27c0d6ce2544")
+		(property "Reference" "D5"
+			(at 97.79 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 97.79 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 97.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 97.79 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 233.68 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4081bc8-d1c3-41e4-a75c-ae269c014337")
+		(property "Reference" "SW12"
+			(at 233.68 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 233.68 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 233.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1e7ddb9-e808-43b6-814c-73b80f2a24c1")
+		)
+		(pin "2"
+			(uuid "313e8160-b9b4-49dc-b3d2-28efc50969d1")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Interface_Expansion:PCF8574T")
+		(at 43.18 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a600112c-3b85-4822-a92b-630b1c8fd466")
+		(property "Reference" "U4"
+			(at 45.3233 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PCF8574T"
+			(at 45.3233 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm"
+			(at 43.18 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+			(at 43.18 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0100xxx, SOIC-16"
+			(at 43.18 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "a8ffc503-f313-421f-a617-14c64a0eb629")
+		)
+		(pin "14"
+			(uuid "1d45d4c9-6207-475f-99df-e158bab556fb")
+		)
+		(pin "15"
+			(uuid "50ad6376-673c-4e24-be87-330ed2eb4ac3")
+		)
+		(pin "7"
+			(uuid "d09c3312-b9e1-41b1-aa83-03b63ad41a79")
+		)
+		(pin "1"
+			(uuid "e4a0e428-004d-4086-b84e-48bbd650f08d")
+		)
+		(pin "2"
+			(uuid "c546f3de-eb2d-4fa4-948f-ba0aed129ac3")
+		)
+		(pin "3"
+			(uuid "81ee86f9-4ab1-465a-a98f-da17a7c34aab")
+		)
+		(pin "5"
+			(uuid "998ac17a-ad01-4eb4-8389-e1ed47c3c6d5")
+		)
+		(pin "6"
+			(uuid "b1ef2e08-1baf-4563-9980-5de0f61e9606")
+		)
+		(pin "10"
+			(uuid "5e45a3fe-f84d-4307-95a6-00fba503f0e8")
+		)
+		(pin "13"
+			(uuid "0af0cdfd-f6f1-43f0-bb45-ad512daa6282")
+		)
+		(pin "8"
+			(uuid "c0bd4f97-e1cf-409f-aaeb-a9535ba37dd8")
+		)
+		(pin "16"
+			(uuid "f19b0b18-bbe4-4e17-8815-843215334b6c")
+		)
+		(pin "4"
+			(uuid "45f2bcb9-4a7e-4334-a887-5e6ecb6e892c")
+		)
+		(pin "11"
+			(uuid "a35e8499-33c0-4abd-b776-50a21d556e49")
+		)
+		(pin "12"
+			(uuid "70b1b32a-ab64-40fc-b3eb-7e0fe5d5ce43")
+		)
+		(instances
+			(project "BWR5 Physical Simulator"
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 135.89 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6b0250a-c1a4-4c80-9eaa-a660f845212b")
+		(property "Reference" "D28"
+			(at 135.89 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 135.89 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 135.89 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 135.89 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 220.98 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a873d723-e3e2-4b26-9167-cee4bfcae50c")
+		(property "Reference" "SW11"
+			(at 220.98 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 220.98 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 220.98 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1e7ddb9-e808-43b6-814c-73b80f2a24c1")
+		)
+		(pin "2"
+			(uuid "313e8160-b9b4-49dc-b3d2-28efc50969d1")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 110.49 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8772397-46a7-4474-8b91-61b8c1de8c9c")
+		(property "Reference" "D26"
+			(at 110.49 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 110.49 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 110.49 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 233.68 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a97421d3-be2f-42a9-9a94-1e5b2eb70158")
+		(property "Reference" "SW6"
+			(at 233.68 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 233.68 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 233.68 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5d7f09f-d999-44b5-8391-ee67f406eb75")
+		)
+		(pin "2"
+			(uuid "6aadf449-2700-4af2-88ac-4d4f2f9dad51")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 123.19 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9b2114c-8900-4604-a364-fae0da6610ce")
+		(property "Reference" "D3"
+			(at 123.19 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 123.19 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 123.19 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 123.19 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 208.28 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b131c387-62e6-4645-a280-4ba66e77ae45")
+		(property "Reference" "SW4"
+			(at 208.28 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 208.28 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 208.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5d7f09f-d999-44b5-8391-ee67f406eb75")
+		)
+		(pin "2"
+			(uuid "6aadf449-2700-4af2-88ac-4d4f2f9dad51")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Interface_Expansion:PCF8574T")
+		(at 162.56 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b205570e-fbbc-4838-8f1f-37587164ac14")
+		(property "Reference" "U2"
+			(at 164.7033 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "PCF8574T"
+			(at 164.7033 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm"
+			(at 162.56 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+			(at 162.56 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0100xxx, SOIC-16"
+			(at 162.56 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "fbb37398-40d1-4fee-b9fa-62a197463c20")
+		)
+		(pin "14"
+			(uuid "e9ac1170-18f6-484b-bf0b-38552f55807d")
+		)
+		(pin "15"
+			(uuid "2d338d41-b539-48a5-938c-14ca7b5ffbbd")
+		)
+		(pin "7"
+			(uuid "5dd82b38-ff6a-4383-b894-15df629febaf")
+		)
+		(pin "1"
+			(uuid "b3350036-b287-4f87-9048-8038da6090dc")
+		)
+		(pin "2"
+			(uuid "404d1175-8442-4ada-951c-3b053ca6ad37")
+		)
+		(pin "3"
+			(uuid "ab4bfa30-4d85-4d40-87dd-a38751bf3e7d")
+		)
+		(pin "5"
+			(uuid "03ee68b8-4314-4c4a-af53-95f90cf5bf7b")
+		)
+		(pin "6"
+			(uuid "a5b33a86-96db-4a12-ba8b-3bd4d4e9cc9a")
+		)
+		(pin "10"
+			(uuid "1b558e1e-5a73-4702-b70b-215ae685aef6")
+		)
+		(pin "13"
+			(uuid "fd601aae-1427-4ede-8532-dd5458f6224b")
+		)
+		(pin "8"
+			(uuid "1d1b0189-f44a-484a-b363-14592ce03e70")
+		)
+		(pin "16"
+			(uuid "e899d9e2-324b-46c4-a439-7818780ff920")
+		)
+		(pin "4"
+			(uuid "28be0fe9-9aab-41d4-841c-127a5dff10f8")
+		)
+		(pin "11"
+			(uuid "af66bc91-0db5-4e09-acde-99a3c97711a2")
+		)
+		(pin "12"
+			(uuid "60fd59cf-280c-45f3-a576-4588d4a402e2")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 246.38 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc9f585c-919c-4f4e-9707-4249d35d5f69")
+		(property "Reference" "SW38"
+			(at 246.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 246.38 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 246.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 208.28 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf268e4e-875c-41bc-8479-377cc9f37bdf")
+		(property "Reference" "SW24"
+			(at 208.28 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 208.28 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 208.28 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 85.09 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2cce47e-def4-45b4-843f-9207219430e5")
+		(property "Reference" "D17"
+			(at 85.09 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 85.09 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 85.09 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 85.09 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 135.89 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3752c0b-d90a-4f41-825b-c25418059d1d")
+		(property "Reference" "D8"
+			(at 135.89 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 135.89 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 135.89 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 135.89 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Interface_Expansion:PCF8574T")
+		(at 162.56 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c73d94ce-c41f-4ab6-bc6d-e027688d885f")
+		(property "Reference" "U3"
+			(at 164.7033 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PCF8574T"
+			(at 164.7033 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm"
+			(at 162.56 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+			(at 162.56 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0100xxx, SOIC-16"
+			(at 162.56 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "fbb37398-40d1-4fee-b9fa-62a197463c20")
+		)
+		(pin "14"
+			(uuid "e9ac1170-18f6-484b-bf0b-38552f55807d")
+		)
+		(pin "15"
+			(uuid "2d338d41-b539-48a5-938c-14ca7b5ffbbd")
+		)
+		(pin "7"
+			(uuid "5dd82b38-ff6a-4383-b894-15df629febaf")
+		)
+		(pin "1"
+			(uuid "b3350036-b287-4f87-9048-8038da6090dc")
+		)
+		(pin "2"
+			(uuid "404d1175-8442-4ada-951c-3b053ca6ad37")
+		)
+		(pin "3"
+			(uuid "ab4bfa30-4d85-4d40-87dd-a38751bf3e7d")
+		)
+		(pin "5"
+			(uuid "03ee68b8-4314-4c4a-af53-95f90cf5bf7b")
+		)
+		(pin "6"
+			(uuid "a5b33a86-96db-4a12-ba8b-3bd4d4e9cc9a")
+		)
+		(pin "10"
+			(uuid "1b558e1e-5a73-4702-b70b-215ae685aef6")
+		)
+		(pin "13"
+			(uuid "fd601aae-1427-4ede-8532-dd5458f6224b")
+		)
+		(pin "8"
+			(uuid "1d1b0189-f44a-484a-b363-14592ce03e70")
+		)
+		(pin "16"
+			(uuid "e899d9e2-324b-46c4-a439-7818780ff920")
+		)
+		(pin "4"
+			(uuid "28be0fe9-9aab-41d4-841c-127a5dff10f8")
+		)
+		(pin "11"
+			(uuid "af66bc91-0db5-4e09-acde-99a3c97711a2")
+		)
+		(pin "12"
+			(uuid "60fd59cf-280c-45f3-a576-4588d4a402e2")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 220.98 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c78442de-6aa2-4684-bb36-8a27258395aa")
+		(property "Reference" "SW31"
+			(at 220.98 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 220.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 220.98 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 148.59 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8559970-a3b6-4020-a987-d65501150e5a")
+		(property "Reference" "D15"
+			(at 148.59 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 148.59 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 148.59 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 148.59 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 233.68 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ced8c22c-6124-4a86-a12d-d08316e772c3")
+		(property "Reference" "SW37"
+			(at 233.68 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 233.68 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 233.68 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 110.49 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0a783af-3a4c-4ca2-8bf3-b1f9f92b6c14")
+		(property "Reference" "D32"
+			(at 110.49 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 110.49 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 110.49 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 135.89 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2b7a12d-2a9c-4bdc-a63a-60a706130943")
+		(property "Reference" "D21"
+			(at 135.89 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 135.89 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 135.89 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 135.89 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 271.78 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3da6a64-96fd-4c4b-85c6-6711e07b5be3")
+		(property "Reference" "SW15"
+			(at 271.78 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 271.78 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 271.78 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1e7ddb9-e808-43b6-814c-73b80f2a24c1")
+		)
+		(pin "2"
+			(uuid "313e8160-b9b4-49dc-b3d2-28efc50969d1")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 97.79 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db0701a9-fa0f-45ef-83f6-23f51d4ae751")
+		(property "Reference" "D25"
+			(at 97.79 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 97.79 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 97.79 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 97.79 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 246.38 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e52ebbf9-ce05-48df-bbd4-dc64a45ccb59")
+		(property "Reference" "SW3"
+			(at 246.38 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 246.38 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 246.38 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5d7f09f-d999-44b5-8391-ee67f406eb75")
+		)
+		(pin "2"
+			(uuid "6aadf449-2700-4af2-88ac-4d4f2f9dad51")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 246.38 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9d042d0-b370-4fe0-80d0-7a01c47142a6")
+		(property "Reference" "SW7"
+			(at 246.38 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 246.38 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 246.38 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5d7f09f-d999-44b5-8391-ee67f406eb75")
+		)
+		(pin "2"
+			(uuid "6aadf449-2700-4af2-88ac-4d4f2f9dad51")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 110.49 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eae28d89-9002-483f-9092-72639b30dffc")
+		(property "Reference" "D19"
+			(at 110.49 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 110.49 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 110.49 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 220.98 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ebe03bae-2248-4651-9a6e-cf3a7d2c45d8")
+		(property "Reference" "SW5"
+			(at 220.98 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 220.98 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 220.98 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5d7f09f-d999-44b5-8391-ee67f406eb75")
+		)
+		(pin "2"
+			(uuid "6aadf449-2700-4af2-88ac-4d4f2f9dad51")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 97.79 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef79def5-f580-4f48-b5c9-f2984921ad19")
+		(property "Reference" "D31"
+			(at 97.79 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 97.79 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 97.79 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 97.79 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 195.58 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2326d03-7409-4fce-b3d1-9f5ffd40780b")
+		(property "Reference" "SW16"
+			(at 195.58 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 195.58 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 195.58 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_45deg")
+		(at 97.79 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f5e95e2a-871a-4300-9ef8-68aeef215092")
+		(property "Reference" "D36"
+			(at 97.79 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_45deg"
+			(at 97.79 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, rotated by 45°"
+			(at 97.79 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 97.79 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83f4fe16-9e20-4b0d-8dfe-c90ff3972748")
+		)
+		(pin "1"
+			(uuid "b99ee4f7-7996-4bf2-97f1-9fdb91af02f3")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "D36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 259.08 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f74bf45c-941e-4300-b9ca-610b5516f29c")
+		(property "Reference" "SW28"
+			(at 259.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 259.08 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 259.08 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Interface_Expansion:PCF8574T")
+		(at 43.18 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb6b77a5-d8fd-49e9-a8f3-476f6bb099e9")
+		(property "Reference" "U6"
+			(at 45.3233 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PCF8574T"
+			(at 45.3233 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm"
+			(at 43.18 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+			(at 43.18 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0100xxx, SOIC-16"
+			(at 43.18 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "c8d4c7e8-6bad-4855-8e3b-237511f8bf1d")
+		)
+		(pin "14"
+			(uuid "da8ed028-2b1d-4918-858d-0853037db594")
+		)
+		(pin "15"
+			(uuid "8db4bd80-8737-4724-a5eb-3609a17df746")
+		)
+		(pin "7"
+			(uuid "71585b17-2ac6-4687-81d2-442bdb72141e")
+		)
+		(pin "1"
+			(uuid "8a535fa3-a620-4873-985d-97592a462a85")
+		)
+		(pin "2"
+			(uuid "a12dd0fe-b29f-46cc-b29b-6320807495c3")
+		)
+		(pin "3"
+			(uuid "cd044efd-5242-4b08-a97f-2985345b2142")
+		)
+		(pin "5"
+			(uuid "785707a2-1ec3-4a4f-9cb7-4a1541fb6eef")
+		)
+		(pin "6"
+			(uuid "e129eacb-18a5-428f-b43d-753a96c10f8e")
+		)
+		(pin "10"
+			(uuid "e6e805d0-da68-4b2c-9737-eda56dfc0398")
+		)
+		(pin "13"
+			(uuid "9a34fe84-d181-4941-b4e6-acb76294274f")
+		)
+		(pin "8"
+			(uuid "bf54bb40-41bc-4e6e-bdf5-b1f68fdc1470")
+		)
+		(pin "16"
+			(uuid "9a8c9efc-d766-4d60-b8b6-ff4718780e06")
+		)
+		(pin "4"
+			(uuid "bd2a5e50-9dae-49f9-a2ea-59ff6944552f")
+		)
+		(pin "11"
+			(uuid "ad42a25b-0c04-4e4f-81cd-1651a4948d1a")
+		)
+		(pin "12"
+			(uuid "1a82db0a-3919-4a5a-a5c4-4decbde6558d")
+		)
+		(instances
+			(project "BWR5 Physical Simulator"
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 233.68 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffe266f1-d08b-42f7-8f33-e6659523fd30")
+		(property "Reference" "SW32"
+			(at 233.68 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_45deg"
+			(at 233.68 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 233.68 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d486fe8b-1c6c-47eb-bcef-051297e41c60")
+		)
+		(pin "2"
+			(uuid "96c884a4-d67e-4c8f-8e17-bbccf065379e")
+		)
+		(instances
+			(project ""
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(reference "SW32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 157.48)
+		(size 25.4 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4375c41f-c494-419c-9566-c2271488225b")
+		(property "Sheetname" "Control Rod Controls"
+			(at 177.8 156.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 177.8 163.1446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BWR5 Physical Simulator"
+				(path "/84a6a44d-a57b-477e-961a-5d5b7d714208"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
