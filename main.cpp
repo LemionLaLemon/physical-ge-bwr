@@ -1,6 +1,9 @@
 #include <Arduino.h>
 #include <map>
 #include <string>
+#include <Wire.h> 
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd(0x27,20,4);
 //constants
 struct CrossSections {
   int U235_capture = 99;
@@ -210,9 +213,12 @@ void reactor_physics(double dt, std::map<std::string, RodState>& rods){
 
 void setup() {
   Serial.begin(9600);
+  lcd.init();
+  lcd.backlight();
+  lcd.clear();
   for (const char* rod : rodPositions){
     Serial.println(rod);
-    rods[std::string(rod)] = {68200531029,48};
+    rods[std::string(rod)] = {10,0};
   };
 }
 
@@ -249,5 +255,21 @@ void loop() {
   double avg_flux = neutrons/rods.size();
   double APRM = (avg_flux/FullPowerFlux)*100;
   Serial.println(String(neutrons) + " C/s | " + String(APRM) + " %NOM | " + String(model.reactorWaterTemperature) + " Deg C | " + rods["15-03"].p + " Notches");
+  std::string rodpos;
+  if (std::to_string(rods["15-03"].p).length() == 1){
+    rodpos = std::string("0") + std::to_string(rods["15-03"].p);
+  }else{
+    rodpos = std::to_string(rods["15-03"].p);
+  }
+  lcd.setCursor(0,0);
+  lcd.print("R_p:");
+  lcd.print(rodpos.c_str());
+  lcd.print(" N_RE:");
+  lcd.print(APRM);
+  lcd.print("%");
+  lcd.setCursor(0,1);
+  lcd.print("T_POskut:");
+  lcd.print(String(model.reactorWaterTemperature));
+  lcd.print(" C");
   sleep(dt);
 }
