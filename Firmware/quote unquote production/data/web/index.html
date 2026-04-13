@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>espSCADA</title>
+</head>
+<body>
+    <div class="container">
+        <div class="status">
+            <span class="CurrGroup">--</span> 
+            <b><span>CONTROL ROD POSITION</span></b>
+            <br>
+            <br>
+            <div class="ControlRodGuide">
+                <b><span class="CRG">CONTROL ROD GUIDE</span><br></b>
+                <span>NEX</span>
+                <span class="NextRod">-----</span><br>
+                <span class="NextPosFrom">--→--</span>
+                <div class="Select">
+                    <span>SEL</span>
+                    <span class="SelectedRod">-----</span><br>
+                    <span class="SelPosFrom">--→--</span>
+                </div>
+            </div>
+            <br>
+            <div class="RodWorthManagement">
+                <b><span class="RWM">RWM</span></b><br>
+                <span>GROUP</span><br>
+                <span>ERROR</span><br>
+                <b><span class="InsertError">INSERT</span></b><br>
+                <b><span class="WithdrawError">WITHDRAW</span></b>
+            </div>
+            <span>CORE FLOW RATE</span>
+            <span id="CoreFlow">0</span>
+            <span>kGPM</span><br>
+            <span>REACTOR OUTPUT</span>
+            <span id="APRM">0.00</span>
+            <span>%</span><br>
+            <span>TURBINE OUTPUT</span>
+            <span id="TURBINE">0</span>
+            <span>MW</span><br>
+        </div>
+        <div class="flexRow">
+            <b></b>
+            <div class="leftScale">
+                <span>03<br>09<br>15<br>21<br>27<br>33<br>39<br></span>
+            </div>
+            <div class="fcd">
+                <span></span>
+                <span></span>
+                <span id="15-03">00</span>
+                <span id="21-03">00</span>
+                <span id="27-03">00</span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <span id="09-09">00</span>
+                <span id="15-09">00</span>
+                <span id="21-09">00</span>
+                <span id="27-09">00</span>
+                <span id="33-09">00</span>
+                <span></span>
+
+                <span id="03-15">00</span>
+                <span id="09-15">00</span>
+                <span id="15-15">00</span>
+                <span id="21-15">00</span>
+                <span id="27-15">00</span>
+                <span id="33-15">00</span>
+                <span id="39-15">00</span>
+
+                <span id="03-21">00</span>
+                <span id="09-21">00</span>
+                <span id="15-21">00</span>
+                <span id="21-21">00</span>
+                <span id="27-21">00</span>
+                <span id="33-21">00</span>
+                <span id="39-21">00</span>
+
+                <span id="03-27">00</span>
+                <span id="09-27">00</span>
+                <span id="15-27">00</span>
+                <span id="21-27">00</span>
+                <span id="27-27">00</span>
+                <span id="33-27">00</span>
+                <span id="39-27">00</span>
+                <span></span>
+
+                <span id="09-33">00</span>
+                <span id="15-33">00</span>
+                <span id="21-33">00</span>
+                <span id="27-33">00</span>
+                <span id="33-33">00</span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span id="15-39">00</span>
+                <span id="21-39">00</span>
+                <span id="27-39">00</span>
+                <span></span>
+                <span></span>
+                <div class="rightScale">
+                    <span class="garbage">03</span>
+                    <span class="garbage">09</span>
+                    <span class="garbage">15</span>
+                    <span class="garbage">21</span>
+                    <span class="garbage">27</span>
+                    <span class="garbage">33</span>
+                    <span class="garbage">39</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="websockets.js?v=6"></script>
+<style>
+@font-face {
+    font-family: 'Terminus (TTF)';
+    src: url('data:font/woff;charset=utf-8;base64,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') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    margin: 0px;
+    color: white;
+    font-family: "Terminus (TTF)", monospace;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.container{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.fcd {
+    display: flex;
+    margin-left: 2em;
+    padding: auto;
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(7, 2em);
+    grid-template-rows: repeat(7, 2em);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    font-size: 24px;
+    color:rgb(163, 236, 87);
+    align-items: center;
+}
+.flexRow{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    user-select: none;
+    font-weight: bold;
+}
+.leftScale{
+    margin-left:10vw;
+    font-size: 24px;
+    line-height: 2.2em;
+    margin-top: -2.3em;
+    padding-top: 0px;
+}
+.rightScale{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-top: 1em;
+    letter-spacing: 2.4px;
+}
+.garbage{
+    margin-right: 1em;
+}
+.status{
+    margin-right: 6vw;
+    color:rgb(163, 236, 87);
+    font-size: 24px;
+    justify-content: center;
+    align-content: center;
+    line-height: 1.6em;
+}
+.ControlRodGuide{
+    border: 5px solid rgb(163, 236, 87);
+    padding-left: 1em;
+    font-weight: bold;
+}
+.ControlRodGuide > *{
+    position: relative;
+    top: -20px;
+}
+.RodWorthManagement > *{
+    position: relative;
+    top: -20px;
+}
+.NextRod{
+    position: relative;
+    left: 5em;
+}
+.NextPosFrom{
+    position: relative;
+    left: 7em;
+}
+.SelectedRod{
+    position: relative;
+    left: 5em;
+}
+.SelPosFrom{
+    position: relative;
+    left: 7em;
+}
+.Select{
+    color: white;
+    font-weight: normal;
+}
+.RodWorthManagement{
+    border: 5px solid rgb(163, 236, 87);
+    padding-left: 1em;
+}
+.CRG{
+    background-color: black;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    left:2%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.RWM{
+    background-color: black;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    left:32%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.WithdrawError{
+    position: relative;
+    left: 1em;
+}
+.InsertError{
+    position: relative;
+    left: 1em;
+}
+</style>
+</html>
