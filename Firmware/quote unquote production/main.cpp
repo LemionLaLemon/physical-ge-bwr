@@ -3,20 +3,37 @@
 #include <string>
 #include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+//web server stuff
+#include <SPIFFS.h>
+#include <WiFi.h>
+#include <ESPAsyncWebServer.h>
+#include <AsyncTCP.h>
+#include <ArduinoJson.h>
+
+const char* ssid = "ESP32_BWRSim";
+const char* password = "";
+
+AsyncWebServer server(80);
+AsyncWebSocket ws("/ws");
+
 LiquidCrystal_I2C lcd(0x27,20,4);
+Adafruit_SSD1306 display(128, 64, &Wire, -1);
 //constants
 struct CrossSections {
-  int U235_capture = 99;
+  byte U235_capture = 99;
   int U235_fission = 583;
-  int U238_capture = 2;
-  int H2_scatter = 4;
+  byte U238_capture = 2;
+  byte H2_scatter = 4;
   double C12_capture = 0.002;
   int B10_capture = 3840;
 };
 const CrossSections crossSections;
 struct Direction {
-  int x;
-  int y;
+  short x;
+  short y;
 };
 const Direction directions[] = {
   {6,0},
@@ -24,19 +41,20 @@ const Direction directions[] = {
   {0,6},
   {0,-6}
 };
-double BARN = 1e-24;
-double N235 = 2.53e22;
-double N238 = 2.51e22;
-double NB10 = 5e21;
-double FullPowerFlux = 2.5e12;
+const double BARN = 1e-24;
+const double N235 = 2.53e22;
+const double N238 = 2.51e22;
+const double NB10 = 5e21;
+const double FullPowerFlux = 2.5e12;
 //not constants
 struct ReactorInventory {
-  double waterMass = 75000;
+  int waterMass = 75000;
 };
 ReactorInventory reactorInventory;
 struct Model {
   double reactorWaterTemperature = 20;
-  double coreFlow = 10;
+  double RRCAPercent = 0.05;
+  double RRCBPercent = 0.05;
 };
 Model model;
 const char* rodPositions[] = {
@@ -48,14 +66,22 @@ const char* rodPositions[] = {
                 "09-33","15-33","21-33","27-33","33-33",
                         "15-39","21-39","27-39"
 };
-// put function declarations here:
 struct Fuel { //return type garbage for fuel_get
   double kStep;
   double kEff;
 };
+enum RodMotion {
+  IDLE,
+  INSERT,
+  WITHDRAW,
+  SETTLE
+};
 struct RodState {
-  double n; //local neutron flux
-  int p; //control rod position (0 to 48)
+  double n = 100; //local neutron flux
+  byte p; //control rod position (0 to 48)
+  RodMotion state = IDLE;
+
+  RodState(double neutronFlux = 100, byte pos = 0, RodMotion s = IDLE)  : n(neutronFlux), p(pos), state(s) {}
 };
 std::map<std::string, RodState> rods;
 Fuel fuel_get(double dt, double waterMass, double controlDepth, double neutronFlux, double temperatureFuel, double coreFlow){
@@ -77,7 +103,7 @@ Fuel fuel_get(double dt, double waterMass, double controlDepth, double neutronFl
   double f = U / (U + M + CR);
 
   double voids = neutronFlux / FullPowerFlux;
-  double totalCoreFlow = constrain(abs((coreFlow/100)-1),0,1);
+  double totalCoreFlow = constrain(abs(coreFlow-1),0,1);
   voids = constrain(totalCoreFlow*voids,0,0.7);
 
   f = f*(1-voids);
@@ -88,7 +114,7 @@ Fuel fuel_get(double dt, double waterMass, double controlDepth, double neutronFl
   double Ptn1 = 0.97;
 
   double alpha = 0.0001;
-  double Tref = 20;
+  byte Tref = 20;
 
   double kEff = eta * f * p * eps * Pfn1 * Ptn1;
   kEff *= (1 - alpha * (temperatureFuel - Tref));
@@ -98,7 +124,7 @@ Fuel fuel_get(double dt, double waterMass, double controlDepth, double neutronFl
 };
 
 void reactor_physics(double dt, std::map<std::string, RodState>& rods){
-  double totalCoreFlow = model.coreFlow;
+  double totalCoreFlow = model.RRCAPercent + model.RRCBPercent;
   double waterMass = reactorInventory.waterMass;
 
   std::map<std::string, double> produced_n; //name = neutron flux
@@ -130,13 +156,13 @@ void reactor_physics(double dt, std::map<std::string, RodState>& rods){
   std::map<std::string, double> diffusion_deltas;
 
   for (auto& [name, info]: rods){
-    int x = atoi(name.substr(0,2).c_str());
-    int y = atoi(name.substr(3,2).c_str());
+    byte x = atoi(name.substr(0,2).c_str());
+    byte y = atoi(name.substr(3,2).c_str());
     double my_amount = produced_n[name];
 
     for (const Direction& dir : directions){
-      int nx = x + dir.x; std::string nxs = "";
-      int ny = y + dir.y; std::string nys = "";
+      byte nx = x + dir.x; std::string nxs = "";
+      byte ny = y + dir.y; std::string nys = "";
       if (std::to_string(nx).length() == 1){
         nxs = "0" + std::to_string(nx);
       }else{
@@ -200,7 +226,7 @@ void reactor_physics(double dt, std::map<std::string, RodState>& rods){
   double TempNow = (HeatC/waterMass * 4.18)*dt;
   new_temp += TempNow;
 
-  double boilTemp = 110; //so much for the core being slightly pressurized smh
+  const byte boilTemp = 110; //so much for the core being slightly pressurized smh
   if (model.reactorWaterTemperature > boilTemp){
     double excess = model.reactorWaterTemperature - boilTemp;
 
@@ -213,47 +239,164 @@ void reactor_physics(double dt, std::map<std::string, RodState>& rods){
 
 void setup() {
   Serial.begin(9600);
+  SPIFFS.begin(true);
+  WiFi.softAP(ssid, password);
+  Serial.println(WiFi.softAPIP());
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
+    request->send(SPIFFS, "/web/index.html", "text/html");
+  });
+
+  server.addHandler(&ws);
+  server.begin();
+
   lcd.init();
   lcd.backlight();
-  lcd.clear();
+  lcd.clear();  
   for (const char* rod : rodPositions){
     Serial.println(rod);
-    rods[std::string(rod)] = {10,0};
-  };
+    rods[std::string(rod)] = {100, 0, IDLE};
+  }
+  server.serveStatic("/", SPIFFS, "/web/");
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
+    request->send(SPIFFS, "/web/index.html", "text/html");
+  });
+}
+
+String header;
+unsigned long lastSent = 0;
+
+void sendReactorData(double reactorPower){
+  StaticJsonDocument<2048> doc;
+
+  doc["APRM"] = reactorPower;
+  doc["RRCA"] = model.RRCAPercent;
+  doc["RRCB"] = model.RRCBPercent;
+
+  JsonObject rodsObj = doc.createNestedObject("rods");
+
+  for (auto& [name,info] : rods) {
+    JsonObject rod = rodsObj.createNestedObject(name.c_str());
+    rod["p"] = info.p;
+  }
+
+  String json;
+  serializeJson(doc, json);
+
+  ws.textAll(json);
+}
+
+double TimeSinceLastMovement = 0;
+bool scramming = false;
+bool doneScramming = true;
+double TimeSinceLastScramMovement = 0;
+bool lastMovementWasWithdraw = false;
+
+void CDRM(float dt){
+  TimeSinceLastMovement += dt;
+
+  if (scramming) return;
+  int joystickValue = analogRead(34);
+
+  if (joystickValue >= 0 && joystickValue <= 2000){
+    if (TimeSinceLastMovement < 1) return;
+    TimeSinceLastMovement = 0;
+    lastMovementWasWithdraw = true;
+    for (auto& [name, info] : rods){
+      info.state = WITHDRAW;
+      if (info.p < 48) info.p++;
+    }
+  }
+  else if (joystickValue > 3500) {
+    if (TimeSinceLastMovement < 1) return;
+    TimeSinceLastMovement = 0;
+    lastMovementWasWithdraw = false;
+    for (auto& [name, info] : rods){
+      info.state = INSERT;
+      if (info.p > 0) info.p--;
+    }
+  }
+  else {
+    for (auto & [name, info] : rods){
+      if (info.state == WITHDRAW || info.state == INSERT) {
+        if (info.p % 2 != 0){
+          info.state = SETTLE;
+        }
+        else {
+          info.state = IDLE;
+        }
+      }
+    }
+  }
+}
+
+float settleTimer = 0;
+
+void CDRMSETTLE(float dt){
+  settleTimer += dt;
+
+  if (settleTimer < 0.2) return;
+  settleTimer = 0;
+
+  for (auto& [name, info] : rods){
+    if (info.state == SETTLE){
+      if (info.p % 2 != 0){
+        if (lastMovementWasWithdraw) info.p++;
+        if (!lastMovementWasWithdraw) info.p--;
+      }
+      if (info.p % 2 == 0){
+        info.state = IDLE;
+      }
+    }
+  }
+}
+
+void SCRAM(float dt){
+  TimeSinceLastScramMovement += dt;
+
+  if (not scramming) return;
+  if (TimeSinceLastScramMovement <= 0.1) return;
+
+  TimeSinceLastScramMovement = 0;
+
+  float avgRodPos = 0.00;
+  for (auto& [name,info] : rods){
+    avgRodPos += info.p;
+  }
+  avgRodPos /= rods.size();
+
+  if (!doneScramming and avgRodPos > 0.01) {
+    for (auto& [name,info] : rods){
+      if (info.p > 0) info.p--;
+    }
+  }
+  else{
+    doneScramming = true;
+    scramming = false;
+  }
 }
 
 void loop() {
   float dt = 5.00/60.00;
-  //temp rod controls
-  int joystickValue = analogRead(34);
-  if (joystickValue >= 0 && joystickValue <= 2000){
-    for (auto& [name,info] : rods){
-      info.p += 1;
-      if (info.p > 48){
-        info.p = 48;
-      }
-    }
+
+  if (digitalRead(2) == HIGH && !scramming){
+    scramming = true;
+    doneScramming = false;
   }
-  if (joystickValue > 3500) {
-    for (auto& [name,info] : rods){
-      info.p -= 1;
-      if (info.p < 0){
-        info.p = 0;
-      }
-    }
-  }
-  if (digitalRead(2) == HIGH){
-    for (auto& [name,info] : rods){
-      info.p = 0;
-    }
-  }
+  CDRM(dt);
+  SCRAM(dt);
+  CDRMSETTLE(dt);
+
   reactor_physics(dt,rods);
-  unsigned long long neutrons = 0;
+  double neutrons = 0;
   for (auto& [name,info] : rods){
     neutrons += info.n;
   }
-  double avg_flux = neutrons/rods.size();
-  double APRM = (avg_flux/FullPowerFlux)*100;
+  double avg_flux = neutrons/ (double) rods.size();
+  double APRM = (avg_flux/FullPowerFlux)*100.00;
+  if (millis() - lastSent >= 200) {
+    lastSent = millis();
+    sendReactorData(APRM);
+  }
   Serial.println(String(neutrons) + " C/s | " + String(APRM) + " %NOM | " + String(model.reactorWaterTemperature) + " Deg C | " + rods["15-03"].p + " Notches");
   std::string rodpos;
   if (std::to_string(rods["15-03"].p).length() == 1){
